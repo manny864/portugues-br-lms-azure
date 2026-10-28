@@ -65,6 +65,7 @@ def main():
             run_cmd(["git", "remote", "add", "origin", repo_url])
         else:
             run_cmd(["git", "remote", "set-url", "origin", repo_url])
+        run_cmd(["git", "pull", "--rebase", "origin", "main"], check=False)
         run_cmd(["git", "push", "-u", "origin", "main"])
 
     final_view = run_cmd(["gh", "repo", "view", full_repo, "--json", "url,name,owner,visibility"])
