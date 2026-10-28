@@ -637,7 +637,9 @@ jobs:
           echo "Curriculum JSON validado correctamente."
 
       - name: Deploy to Azure Static Web Apps (si el token está configurado)
-        if: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN != '' }}
+        if: ${{ env.SWA_API_TOKEN != '' }}
+        env:
+          SWA_API_TOKEN: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
