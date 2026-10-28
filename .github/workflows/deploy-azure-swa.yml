@@ -1,0 +1,40 @@
+name: Deploy PT-BR LMS to Azure Static Web Apps
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      runner_target:
+        description: "Runner donde ejecutar el pipeline ('self-hosted' en Azure o 'ubuntu-latest')"
+        required: false
+        default: "ubuntu-latest"
+
+jobs:
+  validate_and_deploy:
+    name: Validate Curriculum & Deploy to Azure SWA
+    # Usa el self-hosted runner en Azure cuando se dispara manualmente con 'self-hosted', o ubuntu-latest por defecto
+    runs-on: ${{ github.event.inputs.runner_target == 'self-hosted' && 'self-hosted' || 'ubuntu-latest' }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Validate Curriculum JSON & Regenerative Scripts
+        run: |
+          python3 scripts/generate_curriculum.py
+          python3 scripts/generate_frontend.py
+          python3 -m json.tool data/curriculum.json > /dev/null
+          echo "Curriculum JSON validado correctamente."
+
+      - name: Deploy to Azure Static Web Apps (si el token está configurado)
+        if: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN != '' }}
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          app_location: "/"
+          api_location: "api"
+          output_location: ""
+          skip_app_build: true

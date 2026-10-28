@@ -1,0 +1,41 @@
+name: Terraform Azure FinOps Infrastructure (Self-Hosted Runner Ready)
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "Acción de Terraform a ejecutar"
+        required: true
+        default: "plan"
+        type: choice
+        options:
+          - validate
+          - plan
+          - apply
+      use_azure_self_hosted:
+        description: "Ejecutar en el Self-Hosted Runner alojado en Azure ([self-hosted, azure])"
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  terraform:
+    name: Terraform (${{ inputs.action }})
+    runs-on: ${{ inputs.use_azure_self_hosted && 'self-hosted' || 'ubuntu-latest' }}
+    defaults:
+      run:
+        working-directory: infra/terraform
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.9.5
+
+      - name: Terraform Format Check & Init (Backend-less validation)
+        run: |
+          terraform fmt -check
+          terraform init -backend=false
+          terraform validate

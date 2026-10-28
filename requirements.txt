@@ -1,0 +1,2 @@
+# Dependencias deterministas de automatización y scripts locales
+# Los generadores en /scripts usan la biblioteca estándar de Python 3.10+

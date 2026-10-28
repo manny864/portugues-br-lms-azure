@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sotaque Brasileiro — LMS de Portugués Brasileño (A1 a C2) para Hispanohablantes</title>
+  <meta name="description" content="Plataforma interactiva de Portugués Brasileño (PT-BR) para hispanohablantes desde A1 hasta C2 con fonética contrastiva, falsos amigos, inmersión cultural y arquitectura Serverless en Azure." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-emerald-500 selection:text-white">
+
+  <!-- Barra Superior (Header) -->
+  <header class="surface-card sticky top-0 z-30 border-b backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+      <!-- Marca -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-600 via-emerald-500 to-amber-400 flex items-center justify-center text-slate-950 font-extrabold text-lg shadow-sm">
+          BR
+        </div>
+        <div>
+          <div class="font-extrabold text-base tracking-tight flex items-center gap-2">
+            <span>Sotaque Brasileiro</span>
+            <span class="hidden sm:inline-block px-2 py-0.5 text-[10px] font-bold uppercase rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400">A1 → C2</span>
+          </div>
+          <p class="text-[11px] opacity-70 hidden sm:block">Portugués Brasileño para Hispanohablantes • Azure Serverless LMS</p>
+        </div>
+      </div>
+
+      <!-- Navegación de Vistas SPA -->
+      <nav class="hidden md:flex items-center gap-1.5 surface-elevated p-1.5 rounded-xl">
+        <button type="button" data-nav-view="dashboard" class="px-3.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">
+          📊 Dashboard
+        </button>
+        <button type="button" data-nav-view="lesson" class="px-3.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">
+          📚 Lección Activa
+        </button>
+        <button type="button" data-nav-view="imersao" class="px-3.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">
+          🎧 Imersão Real
+        </button>
+        <button type="button" data-nav-view="speaking" class="px-3.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">
+          🎙️ Práctica Oral
+        </button>
+        <button type="button" data-nav-view="azure-arch" class="px-3.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer">
+          ☁️ Azure FinOps
+        </button>
+      </nav>
+
+      <!-- Estado del Estudiante, Tema y Sesión -->
+      <div class="flex items-center gap-2.5">
+        <div class="hidden lg:flex items-center gap-2 text-xs font-bold surface-elevated px-3 py-1.5 rounded-xl">
+          <span id="header-level" class="text-emerald-600 dark:text-emerald-400">Nivel A1</span>
+          <span class="opacity-30">|</span>
+          <span id="header-streak">🔥 3 días</span>
+          <span class="opacity-30">|</span>
+          <span id="header-xp" class="text-amber-500">⭐ 60 XP</span>
+        </div>
+
+        <button type="button" id="btn-toggle-theme" class="px-3 py-1.5 rounded-xl surface-elevated text-xs font-semibold hover:border-emerald-500 transition cursor-pointer">
+          ☀️ Claro
+        </button>
+
+        <button type="button" id="btn-open-auth-modal" class="px-3 py-1.5 rounded-xl bg-emerald-600/15 hover:bg-emerald-600/25 border border-emerald-500/30 text-left transition cursor-pointer">
+          <div id="header-user-name" class="text-xs font-bold text-emerald-700 dark:text-emerald-300 truncate max-w-[140px]">Mateo Rojas</div>
+          <div id="header-user-email" class="text-[10px] opacity-70 truncate max-w-[140px]">mateo@ejemplo.lat</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Barra móvil de navegación SPA -->
+    <div class="flex md:hidden items-center justify-around border-t border-emerald-500/15 py-2 px-2 text-xs font-bold">
+      <button type="button" data-nav-view="dashboard" class="px-2.5 py-1 rounded-lg">📊 Inicio</button>
+      <button type="button" data-nav-view="lesson" class="px-2.5 py-1 rounded-lg">📚 Lección</button>
+      <button type="button" data-nav-view="imersao" class="px-2.5 py-1 rounded-lg">🎧 Imersão</button>
+      <button type="button" data-nav-view="speaking" class="px-2.5 py-1 rounded-lg">🎙️ Hablar</button>
+    </div>
+  </header>
+
+  <!-- Layout Principal con Sidebar de Currículo y Contenedor SPA -->
+  <div class="max-w-7xl w-full mx-auto flex-1 px-4 sm:px-6 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
+    <!-- Sidebar Izquierdo: Árbol del Currículo A1 - C2 -->
+    <aside class="lg:col-span-3 space-y-4">
+      <div class="surface-card rounded-2xl p-4 space-y-4 sticky top-20">
+        <div class="flex items-center justify-between border-b border-emerald-500/15 pb-3">
+          <div>
+            <h2 class="text-sm font-extrabold">Currículo PT-BR</h2>
+            <p class="text-[11px] opacity-70">Selecciona un bloque o lección</p>
+          </div>
+          <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/15 text-emerald-600 dark:text-emerald-400">JSON Engine</span>
+        </div>
+
+        <div id="sidebar-curriculum-tree" class="space-y-4 max-h-[65vh] overflow-y-auto pr-1">
+          <!-- Renderizado dinámicamente desde /data/curriculum.json -->
+        </div>
+      </div>
+    </aside>
+
+    <!-- Contenedor Dinámico de Vistas SPA -->
+    <main id="spa-main-view" class="lg:col-span-9 min-w-0">
+      <!-- Renderizado dinámicamente por app.js y engine.js -->
+    </main>
+  </div>
+
+  <!-- Modal Multiusuario (Local + Preparado para Azure Static Web Apps Auth / Entra External ID) -->
+  <div id="auth-modal" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="surface-card rounded-2xl max-w-lg w-full p-6 space-y-5 shadow-2xl border border-emerald-500/30">
+      <div class="flex items-center justify-between border-b border-emerald-500/20 pb-3">
+        <div>
+          <h3 class="text-lg font-extrabold">Gestión de Sesiones Multiusuario</h3>
+          <p class="text-xs opacity-75">Cada estudiante mantiene su propio árbol de progreso aislado</p>
+        </div>
+        <button type="button" id="btn-close-auth-modal" class="w-8 h-8 rounded-lg surface-elevated flex items-center justify-center font-bold cursor-pointer">✕</button>
+      </div>
+
+      <!-- Perfiles Locales Activos -->
+      <div class="space-y-2">
+        <label class="text-xs font-bold uppercase tracking-wider opacity-75">Perfiles Disponibles en este Dispositivo:</label>
+        <div id="auth-users-list" class="space-y-2 max-h-48 overflow-y-auto"></div>
+      </div>
+
+      <!-- Crear Nuevo Estudiante -->
+      <form id="form-new-user" class="space-y-3 pt-3 border-t border-emerald-500/20">
+        <label class="text-xs font-bold uppercase tracking-wider opacity-75 block">Crear o Ingresar con otra Cuenta Local:</label>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          <input id="input-user-name" type="text" required placeholder="Nombre (ej. Sofía Morales)" class="px-3.5 py-2 rounded-xl surface-elevated text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+          <input id="input-user-email" type="email" required placeholder="Correo (ej. sofia@correo.com)" class="px-3.5 py-2 rounded-xl surface-elevated text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+        </div>
+        <button type="submit" class="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition cursor-pointer">
+          + Iniciar Sesión con Nuevo Árbol de Progreso
+        </button>
+      </form>
+
+      <!-- Proveedores Cloud Azure Static Web Apps / Entra External ID -->
+      <div class="space-y-2 pt-3 border-t border-emerald-500/20">
+        <label class="text-xs font-bold uppercase tracking-wider text-blue-500 block">SSO en Producción (Azure Static Web Apps / Entra ID):</label>
+        <div class="grid grid-cols-2 gap-2.5">
+          <button type="button" data-azure-login="aad" class="py-2 px-3 rounded-xl surface-elevated hover:border-blue-500 text-xs font-semibold transition cursor-pointer">
+            🔐 Microsoft Entra ID
+          </button>
+          <button type="button" data-azure-login="google" class="py-2 px-3 rounded-xl surface-elevated hover:border-blue-500 text-xs font-semibold transition cursor-pointer">
+            🌐 Google Auth (/.auth)
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

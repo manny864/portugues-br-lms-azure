@@ -1,0 +1,1477 @@
+{
+  "courseMeta": {
+    "id": "pt-br-hispanohablantes-a1-c2",
+    "title": "Sotaque Brasileiro: Portugués Brasileño (PT-BR) para Hispanohablantes",
+    "subtitle": "LMS Contrastivo Español ↔ Portugués Brasileño desde Supervivencia (A1) hasta Dominio Ejecutivo y Cultural (C2)",
+    "version": "2.0.0",
+    "targetAudience": "Hispanohablantes (América Latina y España)",
+    "azureMediaBaseUrl": "https://cdn-ptbr-lms.azurefd.net/media",
+    "speechAssessmentLocale": "pt-BR",
+    "recommendedVoices": [
+      "pt-BR-FranciscaNeural",
+      "pt-BR-AntonioNeural"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "block-a1-a2",
+      "code": "A1 - A2",
+      "title": "Bloque Inicial: Supervivencia y Cotidianidad",
+      "cefrRange": [
+        "A1",
+        "A2"
+      ],
+      "badgeColor": "emerald",
+      "description": "Rompe la trampa del 'portuñol' desde el primer día. Domina la fonética nasal y palatal brasileña, los verbos esenciales en presente y pasado, y desenvuélvete en restaurantes, transporte y rutinas reales en Brasil.",
+      "grammarSummary": [
+        "Alfabeto y sonidos nasales (ão, ões, ã, em/im)",
+        "Diferencia fonética entre ç (/s/), ch (/ʃ/) y x (/ʃ/, /ks/, /z/, /s/)",
+        "Vocales abiertas (/ɛ/, /ɔ/) vs. cerradas (/e/, /o/) y reducción vocálica final (-o -> /u/, -e -> /i/)",
+        "Palatalización brasileña: de/di (/dʒi/) y te/ti (/tʃi/) + R inicial/doble aspirada (/h/)",
+        "Presente de indicativo: ser, estar, ter (haber/tener), ir, fazer, poder",
+        "Pretérito Perfeito Simples y Futuro Próximo (ir + infinitivo: 'Vou fazer', nunca 'Vou a fazer')"
+      ],
+      "lexiconAndSkills": [
+        "Saludos informales y formales, números, familia, comida brasileña, ropa, direcciones y Pix/compras",
+        "Presentarse, pedir en un boteco o restaurante, comprar un pasaje, describir la rutina diaria"
+      ],
+      "modules": [
+        {
+          "id": "mod-a1-1",
+          "level": "A1",
+          "title": "Módulo 1: Rompiendo el Portuñol — Sonidos de Brasil y Supervivencia",
+          "durationMinutes": 45,
+          "lessons": [
+            {
+              "id": "les-a1-1",
+              "code": "A1.1",
+              "level": "A1",
+              "title": "Chegando ao Brasil: Fonética Contrastiva, Verbos Clave y Pedir en un Restaurante",
+              "duration": "30 min",
+              "xpReward": 150,
+              "isFullyPlayable": true,
+              "summary": "Aprende por qué 'bom dia' suena como 'bon dchía', cómo usar 'ter' en lugar de 'haber/tener', el futuro sin preposición 'a' y cómo sobrevivir en tu primer almuerzo en São Paulo o Rio.",
+              "theory": {
+                "intro": "Como hispanohablante, ya entiendes cerca del 65% del portugués escrito, pero el portugués brasileño hablado tiene una cadencia musical y vocales que engañan al oído. La regla de oro en el nivel A1 es: **no pronuncies las letras como en español**.",
+                "sections": [
+                  {
+                    "heading": "1. Las 3 Estructuras que te Delatan como Hispanohablante",
+                    "content": "En portugués brasileño cotidiano hay tres estructuras que difieren radicalmente del español desde el primer minuto:",
+                    "comparisonTable": [
+                      {
+                        "concept": "Existencia y Posesión ('Tener' + 'Haber')",
+                        "spanish": "Tengo dos hermanos / Hay café en la mesa",
+                        "ptBr": "Eu tenho dois irmãos / Tem café na mesa",
+                        "note": "En PT-BR oral, el verbo 'ter' reemplaza casi siempre a 'haver' para indicar existencia ('Tem Wi-Fi aqui?')."
+                      },
+                      {
+                        "concept": "Futuro Próximo (Ir + Infinitivo)",
+                        "spanish": "Voy a pedir la cuenta / Vamos a viajar",
+                        "ptBr": "Vou pedir a conta / Vamos viajar",
+                        "note": "¡Prohibido poner la preposición 'a' entre el verbo IR y el infinitivo! Decir 'Vou a comer' es error clásico de portuñol."
+                      },
+                      {
+                        "concept": "Gusto ('Gostar de')",
+                        "spanish": "Me gusta mucho la música brasileña",
+                        "ptBr": "Eu gosto muito de música brasileira",
+                        "note": "'Gostar' funciona como en inglés ('I like') y SIEMPRE exige la preposición 'de' ('Gosto de você', 'Gosta de café?')."
+                      }
+                    ]
+                  },
+                  {
+                    "heading": "2. Conjugación Esencial en Presente y Futuro Inmediato",
+                    "content": "En la mayor parte de Brasil se usa **você** (tú/usted) y **a gente** (nosotros coloquial, que conjuga en 3ª persona singular como *ele/ela*):",
+                    "conjugationCards": [
+                      {
+                        "verb": "SER (Identidad / Origen)",
+                        "forms": [
+                          "Eu sou",
+                          "Você / Ele / A gente é",
+                          "Nós somos",
+                          "Vocês / Eles são"
+                        ],
+                        "example": "A gente é do México, mas mora em São Paulo."
+                      },
+                      {
+                        "verb": "ESTAR (Estado temporal -> 'tô / tá')",
+                        "forms": [
+                          "Eu estou (tô)",
+                          "Você / A gente está (tá)",
+                          "Nós estamos",
+                          "Vocês estão (tão)"
+                        ],
+                        "example": "Oi! Tudo bem? Eu tô com fome."
+                      },
+                      {
+                        "verb": "TER (Tener y Haber existencial)",
+                        "forms": [
+                          "Eu tenho",
+                          "Você / A gente tem",
+                          "Nós temos",
+                          "Vocês têm"
+                        ],
+                        "example": "Tem água com gás? Eu tenho uma reserva."
+                      },
+                      {
+                        "verb": "IR + Infinitivo & FAZER",
+                        "forms": [
+                          "Eu vou / faço",
+                          "Você / A gente vai / faz",
+                          "Nós vamos / fazemos",
+                          "Vocês vão / fazem"
+                        ],
+                        "example": "O que a gente vai fazer hoje à noite?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "phonetics": [
+                {
+                  "symbol": "/dʒi/ y /tʃi/",
+                  "grapheme": "de, di / te, ti",
+                  "contrastEs": "En español la D y T son dentales secas ('día', 'tía'). En casi todo Brasil, antes de sonido /i/ (incluyendo la 'e' final átona que suena /i/), se palatalizan.",
+                  "examples": [
+                    {
+                      "word": "Bom dia",
+                      "ipa": "/bõ ˈdʒi.ɐ/",
+                      "approxEs": "bón YÍ-a (como 'y' fuerte o 'j' inglesa)"
+                    },
+                    {
+                      "word": "Boa tarde",
+                      "ipa": "/ˈbo.ɐ ˈtaʁ.dʒi/",
+                      "approxEs": "bó-a TÁR-dchi"
+                    },
+                    {
+                      "word": "Leite quente",
+                      "ipa": "/ˈlej.tʃi ˈkẽ.tʃi/",
+                      "approxEs": "LÉI-tchi KÉN-tchi"
+                    }
+                  ]
+                },
+                {
+                  "symbol": "/ɐ̃w̃/ y /õj̃s/",
+                  "grapheme": "ão, ões, am",
+                  "contrastEs": "Sonido nasal profundo donde el aire sale por nariz y boca simultáneamente. Además, las terminaciones verbales en '-am' átonas suenan como '-ão' breve.",
+                  "examples": [
+                    {
+                      "word": "Pão de queijo",
+                      "ipa": "/ˈpɐ̃w̃ dʒi ˈkej.ʒu/",
+                      "approxEs": "pãu dchi kéi-shu"
+                    },
+                    {
+                      "word": "Corações",
+                      "ipa": "/ko.ɾaˈsõj̃s/",
+                      "approxEs": "co-ra-sõis"
+                    },
+                    {
+                      "word": "Eles falam",
+                      "ipa": "/ˈe.lis ˈfa.lɐ̃w̃/",
+                      "approxEs": "é-lis fá-lãu"
+                    }
+                  ]
+                },
+                {
+                  "symbol": "/ɛ/ vs /e/ y /ɔ/ vs /o/",
+                  "grapheme": "é/ê y ó/ô",
+                  "contrastEs": "El español solo tiene 5 vocales. El portugués distingue vocales abiertas y cerradas que cambian el significado completo de una palabra.",
+                  "examples": [
+                    {
+                      "word": "Avô (abuelo) vs Avó (abuela)",
+                      "ipa": "/aˈvo/ vs /aˈvɔ/",
+                      "approxEs": "Cerrada como 'o' francesa vs Abierta mandíbula baja"
+                    },
+                    {
+                      "word": "Café (abierta) vs Você (cerrada)",
+                      "ipa": "/kaˈfɛ/ vs /voˈse/",
+                      "approxEs": "ca-FÉ (abierta) vs vo-SÊ (cerrada)"
+                    }
+                  ]
+                },
+                {
+                  "symbol": "/h/ o /ʁ/",
+                  "grapheme": "R inicial y RR",
+                  "contrastEs": "La 'R' inicial o doble 'RR' en Brasil NUNCA vibra con la punta de la lengua como en español; suena como una 'J' suave caribeña o la 'H' de 'house' en inglés.",
+                  "examples": [
+                    {
+                      "word": "Rio de Janeiro",
+                      "ipa": "/ˈhi.u dʒi ʒaˈnej.ɾu/",
+                      "approxEs": "JÍ-u dchi sha-NÉI-ru"
+                    },
+                    {
+                      "word": "Carro rápido",
+                      "ipa": "/ˈka.hu ˈha.pi.du/",
+                      "approxEs": "CÁ-ju JÁ-pi-du"
+                    }
+                  ]
+                }
+              ],
+              "falseFriends": [
+                {
+                  "ptWord": "Polvo",
+                  "ptMeaning": "Pulpo (el marisco octópodo)",
+                  "esTrap": "Polvo (suciedad / tierra en suspensión)",
+                  "correctPtForEs": "Poeira / Pó",
+                  "examplePt": "Pedimos um polvo grelhado delicioso no restaurante em Florianópolis.",
+                  "exampleEs": "Pedimos un pulpo a la parrilla delicioso en el restaurante en Florianópolis."
+                },
+                {
+                  "ptWord": "Esquisito",
+                  "ptMeaning": "Raro, extraño, sospechoso",
+                  "esTrap": "Exquisito (delicioso / refinado)",
+                  "correctPtForEs": "Delicioso / Saboroso / Refinado",
+                  "examplePt": "Nossa, essa comida tem um cheiro meio esquisito! (¡Cuidado: no es un elogio!)",
+                  "exampleEs": "¡Uy, esta comida tiene un olor medio raro! (Para elogiar di: 'Está uma delícia!')."
+                },
+                {
+                  "ptWord": "Propina",
+                  "ptMeaning": "Soborno / Coima ilegal",
+                  "esTrap": "Propina para el mesero (garçom)",
+                  "correctPtForEs": "Gorjeta / Taxa de serviço (10%)",
+                  "examplePt": "Nunca ofereça 'propina' ao garçom! Peça para incluir a gorjeta na conta.",
+                  "exampleEs": "¡Nunca ofrezcas 'soborno' al camarero! Pide incluir la propina (gorjeta) en la cuenta."
+                },
+                {
+                  "ptWord": "Apelido",
+                  "ptMeaning": "Apodo / Sobrenombre cariñoso",
+                  "esTrap": "Apellido familiar",
+                  "correctPtForEs": "Sobrenome",
+                  "examplePt": "Meu nome é Luís Inácio, meu sobrenome é Silva, e meu apelido é Lula.",
+                  "exampleEs": "Mi nombre es Luís Inácio, mi apellido es Silva, y mi apodo es Lula."
+                },
+                {
+                  "ptWord": "Escritório",
+                  "ptMeaning": "Oficina / Despacho de trabajo",
+                  "esTrap": "Escritorio (mueble / mesa)",
+                  "correctPtForEs": "Escrivaninha / Mesa de trabalho",
+                  "examplePt": "Hoje eu não vou trabalhar de casa, vou para o escritório na Paulista.",
+                  "exampleEs": "Hoy no voy a trabajar desde casa, voy a la oficina en la Av. Paulista."
+                },
+                {
+                  "ptWord": "Copo / Taça",
+                  "ptMeaning": "Vaso (copo) / Copa (taça)",
+                  "esTrap": "Copa (en PT 'copa' es despensa/cocina auxiliar) y Vaso (en PT 'vaso' es maceta o inodoro: vaso sanitário)",
+                  "correctPtForEs": "Copo de água / Taça de vinho",
+                  "examplePt": "Garçom, me vê um copo d'água com gelo e limão, por favor?",
+                  "exampleEs": "Camarero, ¿me trae un vaso de agua con hielo y limón, por favor?"
+                }
+              ],
+              "imersaoReal": {
+                "id": "imersao-a1-bossa",
+                "type": "Música MPB / Bossa Nova & Diálogo de Boteco",
+                "title": "Manhã na Padaria & Bossa Acústica em Ipanema",
+                "artistOrSource": "Estúdio MPB Carioca — Sessão Acústica (A1)",
+                "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/a1/bossa-padaria-ipanema.opus",
+                "coverImage": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=900&q=80",
+                "culturalContext": "En Brasil, pedir algo usando el imperativo seco ('Me dá um café') suena brusco si no se suaviza con la entonación o con la expresión mágica **'Me vê...'** ('¿Me pones / me traes...?') acompañada de **'por gentileza'** o **'por favor'**.",
+                "transcript": [
+                  {
+                    "id": "t1",
+                    "startTime": 0,
+                    "endTime": 5,
+                    "speaker": "Voz MPB / Narrador",
+                    "pt": "Bom dia, Rio! O sol já nasceu lá na praia de Ipanema.",
+                    "es": "¡Buen día, Río! El sol ya salió allá en la playa de Ipanema."
+                  },
+                  {
+                    "id": "t2",
+                    "startTime": 5,
+                    "endTime": 11,
+                    "speaker": "Atendente (Padaria)",
+                    "pt": "Oi, bom dia! Tudo joia? O que você vai querer hoje?",
+                    "es": "¡Hola, buen día! ¿Todo genial? ¿Qué vas a querer hoy?"
+                  },
+                  {
+                    "id": "t3",
+                    "startTime": 11,
+                    "endTime": 18,
+                    "speaker": "Cliente",
+                    "pt": "Tudo ótimo! Me vê um pão de queijo quentinho e um copo de suco de laranja, por gentileza.",
+                    "es": "¡Todo excelente! Me pones un pan de queso calentito y un vaso de jugo de naranja, por favor."
+                  },
+                  {
+                    "id": "t4",
+                    "startTime": 18,
+                    "endTime": 24,
+                    "speaker": "Atendente (Padaria)",
+                    "pt": "Pra já! Tem café fresquinho também. Vai pagar no cartão ou no Pix?",
+                    "es": "¡Enseguida! Hay café recién hecho también. ¿Vas a pagar con tarjeta o con Pix?"
+                  },
+                  {
+                    "id": "t5",
+                    "startTime": 24,
+                    "endTime": 30,
+                    "speaker": "Cliente",
+                    "pt": "Vou pagar no Pix mesmo. Muito obrigado, viu? Valeu!",
+                    "es": "Voy a pagar por Pix nomás. Muchas gracias, ¿eh? ¡Gracias/Chao!"
+                  }
+                ],
+                "giriasNotes": [
+                  {
+                    "term": "Tudo joia? / Beleza?",
+                    "meaning": "¿Todo bien? / ¿Todo genial? Respuesta común: 'Tudo joia!' o 'Beleza!'."
+                  },
+                  {
+                    "term": "Me vê...",
+                    "meaning": "Forma natural y amable de pedir en bares, panaderías y restaurantes ('Me vê uma água sem gás')."
+                  },
+                  {
+                    "term": "No Pix",
+                    "meaning": "Sistema de pagos instantáneos del Banco Central de Brasil; se usa para absolutamente todo, desde un coco en la playa hasta el alquiler."
+                  },
+                  {
+                    "term": "Valeu!",
+                    "meaning": "Gracias informal y afectuoso entre amigos o en comercios cotidianos."
+                  }
+                ]
+              },
+              "exercises": [
+                {
+                  "id": "ex-a1-mc-1",
+                  "type": "multiple-choice",
+                  "title": "Trampa de Portuñol en el Restaurante",
+                  "question": "Terminaste de cenar en un restaurante en São Paulo, la comida estuvo deliciosa y quieres dejarle un extra al camarero (garçom). ¿Cuál de estas frases es 100% natural en portugués brasileño sin caer en falsos amigos?",
+                  "options": [
+                    {
+                      "id": "opt-a",
+                      "text": "Garçom, a comida estava esquisita! Vou deixar uma propina na mesa.",
+                      "isCorrect": false,
+                      "feedback": "¡Doble trampa mortal de portuñol! 'Esquisita' significa 'rara/extraña' (un insulto al chef) y 'propina' significa 'soborno ilegal'."
+                    },
+                    {
+                      "id": "opt-b",
+                      "text": "Garçom, a comida estava uma delícia! Vou deixar uma gorjeta para você.",
+                      "isCorrect": true,
+                      "feedback": "¡Excelente! 'Uma delícia / deliciosa' expresa que estuvo exquisita, 'Vou deixar' usa el futuro sin preposición 'a', y 'gorjeta' es la palabra correcta para propina."
+                    },
+                    {
+                      "id": "opt-c",
+                      "text": "Garçom, me traz um vaso de água, vou a pagar a conta agora.",
+                      "isCorrect": false,
+                      "feedback": "¡Cuidado! 'Vaso' en Brasil es maceta o inodoro (se dice 'copo de água'), y nunca se usa 'vou a pagar', sino 'vou pagar'."
+                    }
+                  ]
+                },
+                {
+                  "id": "ex-a1-fib-1",
+                  "type": "fill-in-the-blanks",
+                  "title": "Construcción Contrastiva: Existencia, Futuro y Gustos",
+                  "instruction": "Completa las oraciones con la estructura brasileña correcta (recuerda: 'ter' para existencia, 'ir + infinitivo' sin 'a', y 'gostar de').",
+                  "items": [
+                    {
+                      "id": "fib-a1-1",
+                      "sentenceBefore": "Amanhã de manhã a gente ",
+                      "sentenceAfter": " (ir + tomar) café na padaria do bairro.",
+                      "acceptedAnswers": [
+                        "vai tomar"
+                      ],
+                      "hint": "Recuerda que 'a gente' conjuga en 3ª persona singular ('vai') y nunca lleva 'a' antes del infinitivo.",
+                      "explanation": "'A gente vai tomar' equivale a 'Nosotros vamos a tomar' en el habla cotidiana brasileña."
+                    },
+                    {
+                      "id": "fib-a1-2",
+                      "sentenceBefore": "Com licença, ",
+                      "sentenceAfter": " (haber/existir en presente) mesa livre na varanda?",
+                      "acceptedAnswers": [
+                        "tem",
+                        "Tem"
+                      ],
+                      "hint": "Verbo de 3 letras que los brasileños usan tanto para 'tener' como para 'hay'.",
+                      "explanation": "En PT-BR se usa 'Tem mesa livre?' en lugar de 'Há mesa livre?'."
+                    },
+                    {
+                      "id": "fib-a1-3",
+                      "sentenceBefore": "Eu gosto muito ",
+                      "sentenceAfter": " (preposición + artículo 'a') música popular brasileira.",
+                      "acceptedAnswers": [
+                        "da",
+                        "de"
+                      ],
+                      "hint": "El verbo 'gostar' exige siempre la preposición 'de' (o 'da' = de + a).",
+                      "explanation": "'Gostar de' nunca se construye con 'me gusta', sino 'Eu gosto de/da...'."
+                    }
+                  ]
+                },
+                {
+                  "id": "ex-a1-audio-1",
+                  "type": "audio-comprehension",
+                  "title": "Comprensión Auditiva: En la Padaria de Ipanema",
+                  "audioTextPt": "Tudo ótimo! Me vê um pão de queijo quentinho e um copo de suco de laranja, por gentileza. Vou pagar no Pix.",
+                  "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/a1/pedido-padaria.opus",
+                  "question": "Escucha el audio del cliente (puedes usar velocidad 0.75x o 1x) y escribe en portugués exactamente qué bebida pidió (3 o 4 palabras clave) o selecciona la respuesta correcta:",
+                  "acceptedKeywords": [
+                    "suco de laranja",
+                    "copo de suco",
+                    "um copo de suco de laranja"
+                  ],
+                  "multipleChoiceFallback": {
+                    "options": [
+                      {
+                        "id": "ac-1",
+                        "text": "Um copo de suco de laranja e pagamento no Pix",
+                        "isCorrect": true
+                      },
+                      {
+                        "id": "ac-2",
+                        "text": "Uma taça de vinho tinto e pagamento em dinheiro",
+                        "isCorrect": false
+                      },
+                      {
+                        "id": "ac-3",
+                        "text": "Um café gelado sem açúcar no cartão de crédito",
+                        "isCorrect": false
+                      }
+                    ]
+                  },
+                  "explanation": "El cliente pide 'um pão de queijo quentinho e um copo de suco de laranja' y confirma 'Vou pagar no Pix'."
+                },
+                {
+                  "id": "ex-a1-fc-1",
+                  "type": "flashcards",
+                  "title": "Flashcards Interactivas: Supervivencia y Falsos Amigos A1",
+                  "cards": [
+                    {
+                      "id": "fc-a1-1",
+                      "frontPt": "O Polvo vs. A Poeira",
+                      "phonetic": "/u ˈpow.vu/ vs /a puˈej.ɾɐ/",
+                      "backEs": "O polvo = El pulpo (marisco) 🐙 | A poeira = El polvo (tierra/suciedad)",
+                      "examplePt": "O polvo com arroz estava maravilhoso.",
+                      "category": "Falso Amigo Crítico"
+                    },
+                    {
+                      "id": "fc-a1-2",
+                      "frontPt": "A Gorjeta vs. A Propina",
+                      "phonetic": "/a ɡoʁˈʒe.tɐ/ vs /a pɾoˈpi.nɐ/",
+                      "backEs": "Gorjeta = Propina al camarero 💵 | Propina = Soborno / Coima ilegal 🚨",
+                      "examplePt": "A gorjeta de 10% já está incluída na conta.",
+                      "category": "Falso Amigo Crítico"
+                    },
+                    {
+                      "id": "fc-a1-3",
+                      "frontPt": "O Apelido vs. O Sobrenome",
+                      "phonetic": "/u a.peˈli.du/ vs /u so.bɾeˈnõ.mi/",
+                      "backEs": "Apelido = Apodo cariñoso | Sobrenome = Apellido de familia",
+                      "examplePt": "Qual é o seu sobrenome completo no passaporte?",
+                      "category": "Falso Amigo"
+                    },
+                    {
+                      "id": "fc-a1-4",
+                      "frontPt": "Pão de queijo quentinho",
+                      "phonetic": "/ˈpɐ̃w̃ dʒi ˈkej.ʒu kẽˈtʃĩ.ɲu/",
+                      "backEs": "Pan de queso calentito (clásico de Minas Gerais en todo Brasil)",
+                      "examplePt": "Me vê dois pães de queijo quentinhos, por favor!",
+                      "category": "Fonética & Cultura"
+                    }
+                  ]
+                },
+                {
+                  "id": "ex-a1-sp-1",
+                  "type": "speaking-prompt",
+                  "title": "Práctica Conversacional (Web Speech API pt-BR): Tu Primer Pedido",
+                  "scenario": "Estás frente al mostrador de una padaria en Copacabana. Saluda y pide un pan de queso y un vaso de jugo de naranja.",
+                  "targetPhrasePt": "Bom dia! Me vê um pão de queijo e um copo de suco de laranja, por favor.",
+                  "phoneticGuide": "Bón YÍ-a! Mi vê un pãu dchi kéi-shu i un có-pu dchi sú-cu dchi la-rán-sha, pur fa-vór.",
+                  "translationEs": "¡Buen día! Me trae un pan de queso y un vaso de jugo de naranja, por favor.",
+                  "keyPhonemesToWatch": [
+                    "Bom dia (/dʒi/)",
+                    "pão (/ɐ̃w̃/)",
+                    "de queijo (/dʒi ˈkej.ʒu/)",
+                    "laranja (/ʒ/)"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "les-a2-1",
+              "code": "A2.1",
+              "level": "A2",
+              "title": "Rotina, Passado (Pretérito Perfeito) e Compras no Dia a Dia",
+              "duration": "35 min",
+              "xpReward": 180,
+              "isFullyPlayable": true,
+              "summary": "Domina el pasado simple en portugués (donde en España o algunas regiones usarías 'he comido', en Brasil siempre es 'comi'), los días de la semana con '-feira' y cómo contar qué hiciste el fin de semana.",
+              "theory": {
+                "intro": "Al pasar a A2, la diferencia clave con el español está en el uso del pasado y en el vocabulario de tiempo: los días laborales en portugués se numeran con **-feira** (*segunda-feira, terça-feira, quarta-feira, quinta-feira, sexta-feira*).",
+                "sections": [
+                  {
+                    "heading": "1. Pretérito Perfeito Simples: Un Solo Pasado para Eventos Recientes",
+                    "content": "En portugués brasileño, incluso si algo ocurrió hace 5 minutos ('hoy he desayunado'), se usa el **Pretérito Perfeito Simples** (`Hoje eu tomei café cedo`). El compuesto (`tenho feito`) ¡significa algo que vienes haciendo repetidamente últimamente!",
+                    "comparisonTable": [
+                      {
+                        "concept": "Acción terminada hoy",
+                        "spanish": "Hoy he hablado con el director / Hoy hablé con él",
+                        "ptBr": "Hoje eu falei com o diretor",
+                        "note": "Nunca uses 'tenho falado' para una acción puntual de hoy."
+                      },
+                      {
+                        "concept": "Acción repetida hasta el presente ('Tenho + participio')",
+                        "spanish": "Últimamente he estado trabajando mucho",
+                        "ptBr": "Ultimamente eu tenho trabalhado muito",
+                        "note": "¡Trampa! 'Tenho trabalhado' = 'He estado trabajando últimamente'."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "phonetics": [
+                {
+                  "symbol": "/ʃ/ vs /s/ vs /z/",
+                  "grapheme": "X, CH y Ç",
+                  "contrastEs": "La 'CH' en portugués nunca explota como en 'chico'; es suave como 'sh' en inglés ('chuva' -> shú-va). La 'Ç' suena siempre como /s/.",
+                  "examples": [
+                    {
+                      "word": "Chuva e chá",
+                      "ipa": "/ˈʃu.vɐ i ˈʃa/",
+                      "approxEs": "SHÚ-va i SHÁ"
+                    },
+                    {
+                      "word": "Almoço na terça-feira",
+                      "ipa": "/awˈmo.su na ˈteʁ.sɐ ˈfej.ɾɐ/",
+                      "approxEs": "au-MÔ-su na TÉR-sa FÉI-ra"
+                    }
+                  ]
+                }
+              ],
+              "falseFriends": [
+                {
+                  "ptWord": "Acordar / Lembrar",
+                  "ptMeaning": "Acordar = Despertarse de dormir | Lembrar = Acordarse (recordar)",
+                  "esTrap": "En español 'acordarse' es recordar. Si dices 'Me acordei de você' en Brasil estás diciendo 'Me desperté de ti'.",
+                  "correctPtForEs": "Eu lembrei de você / Eu acordei às sete horas",
+                  "examplePt": "Ontem eu acordei cedo e lembrei da nossa reunião.",
+                  "exampleEs": "Ayer me desperté temprano y me acordé de nuestra reunión."
+                },
+                {
+                  "ptWord": "Tirar",
+                  "ptMeaning": "Sacar / Quitar (ej. tirar foto, tirar dúvida)",
+                  "esTrap": "Tirar / Arrojar a la basura",
+                  "correctPtForEs": "Jogar fora (arrojar a la basura) / Atirar (lanzar)",
+                  "examplePt": "Pode tirar uma foto nossa aqui no Cristo Redentor?",
+                  "exampleEs": "¿Puede sacarnos una foto aquí en el Cristo Redentor?"
+                }
+              ],
+              "imersaoReal": {
+                "id": "imersao-a2-fimdesemana",
+                "type": "Diálogo Real & Crónica Urbana",
+                "title": "Segunda-feira no Trabalho: Como foi o fim de semana?",
+                "artistOrSource": "Podcast Cotidiano Paulista (A2)",
+                "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/a2/fim-de-semana-sp.opus",
+                "coverImage": "https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?auto=format&fit=crop&w=900&q=80",
+                "culturalContext": "Los lunes (*segunda-feira*) en cualquier oficina o grupo de amigos brasileños la conversación gira en torno a cómo estuvo el *final de semana* (*fds* en WhatsApp).",
+                "transcript": [
+                  {
+                    "id": "t2-1",
+                    "startTime": 0,
+                    "endTime": 6,
+                    "speaker": "Camila",
+                    "pt": "E aí, Lucas! Como foi o seu fim de semana? Descansou bastante?",
+                    "es": "¡Qué tal, Lucas! ¿Cómo estuvo tu fin de semana? ¿Descansaste bastante?"
+                  },
+                  {
+                    "id": "t2-2",
+                    "startTime": 6,
+                    "endTime": 14,
+                    "speaker": "Lucas",
+                    "pt": "Cara, foi corrido! No sábado eu acordei cedo, fiz feira e à noite a gente tirou várias fotos no show.",
+                    "es": "¡Amigo, estuvo movido! El sábado me desperté temprano, compré en el mercado y por la noche sacamos varias fotos en el concierto."
+                  }
+                ],
+                "giriasNotes": [
+                  {
+                    "term": "Corrido",
+                    "meaning": "Ajetreado, con muchas actividades y poco tiempo."
+                  },
+                  {
+                    "term": "Fazer feira",
+                    "meaning": "Comprar frutas y verduras en el mercado callejero tradicional brasileño (con pastel y caldo de cana)."
+                  }
+                ]
+              },
+              "exercises": [
+                {
+                  "id": "ex-a2-mc-1",
+                  "type": "multiple-choice",
+                  "title": "Acordar vs. Lembrar",
+                  "question": "Quieres decirle a una amiga brasileña: 'Hoy me desperté a las 8 y me acordé de tu cumpleaños'. ¿Cómo lo dices correctamente?",
+                  "options": [
+                    {
+                      "id": "a2-opt-1",
+                      "text": "Hoje eu acordei às oito e lembrei do seu aniversário.",
+                      "isCorrect": true,
+                      "feedback": "¡Perfecto! 'Acordar' es despertarse y 'lembrar de' es acordarse/recordar."
+                    },
+                    {
+                      "id": "a2-opt-2",
+                      "text": "Hoje eu despertei às oito e me acordei do seu aniversário.",
+                      "isCorrect": false,
+                      "feedback": "En PT-BR cotidiano se usa 'acordar' para despertarse y 'lembrar' para recordar."
+                    }
+                  ]
+                },
+                {
+                  "id": "ex-a2-fib-1",
+                  "type": "fill-in-the-blanks",
+                  "title": "Pretérito Perfeito en Acción",
+                  "instruction": "Completa la oración con el verbo correcto.",
+                  "items": [
+                    {
+                      "id": "fib-a2-1",
+                      "sentenceBefore": "Ontem nós ",
+                      "sentenceAfter": " (tirar en pasado 1ª plural o 'a gente tirou') muitas fotos na praia.",
+                      "acceptedAnswers": [
+                        "tiramos",
+                        "tirou"
+                      ],
+                      "hint": "Verbo 'tirar' (sacar fotos) en Pretérito Perfeito.",
+                      "explanation": "'Tirar foto' equivale a 'sacar/tomar una foto'."
+                    }
+                  ]
+                },
+                {
+                  "id": "ex-a2-audio-1",
+                  "type": "audio-comprehension",
+                  "title": "Escucha la Rutina del Sábado",
+                  "audioTextPt": "No sábado eu acordei cedo, fiz feira e à noite a gente tirou várias fotos no show.",
+                  "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/a2/rotina-sabado.opus",
+                  "question": "¿Qué hizo Lucas el sábado por la mañana después de despertarse temprano?",
+                  "acceptedKeywords": [
+                    "fiz feira",
+                    "fez feira",
+                    "feira"
+                  ],
+                  "multipleChoiceFallback": {
+                    "options": [
+                      {
+                        "id": "a2-ac-1",
+                        "text": "Fez feira (compró en el mercado libre callejero)",
+                        "isCorrect": true
+                      },
+                      {
+                        "id": "a2-ac-2",
+                        "text": "Foi trabalhar no escritório até tarde",
+                        "isCorrect": false
+                      }
+                    ]
+                  },
+                  "explanation": "Lucas dice: 'No sábado eu acordei cedo, fiz feira...'."
+                },
+                {
+                  "id": "ex-a2-fc-1",
+                  "type": "flashcards",
+                  "title": "Flashcards A2: Días y Verbos Clave",
+                  "cards": [
+                    {
+                      "id": "fc-a2-1",
+                      "frontPt": "Segunda-feira a Sexta-feira",
+                      "phonetic": "/seˈɡũ.dɐ ˈfej.ɾɐ/",
+                      "backEs": "Lunes (2ª feria) a Viernes (6ª feria). El domingo es el 1er día.",
+                      "examplePt": "Sextou! A reunião fica para segunda-feira.",
+                      "category": "Léxico Esencial"
+                    },
+                    {
+                      "id": "fc-a2-2",
+                      "frontPt": "Tirar uma dúvida",
+                      "phonetic": "/tʃiˈɾaʁ ˈũ.mɐ ˈdu.vi.dɐ/",
+                      "backEs": "Aclarar / despejar una duda",
+                      "examplePt": "Professor, posso tirar uma dúvida rápida?",
+                      "category": "Colocación Natural"
+                    }
+                  ]
+                },
+                {
+                  "id": "ex-a2-sp-1",
+                  "type": "speaking-prompt",
+                  "title": "Habla sobre tu Fin de Semana",
+                  "scenario": "Cuéntale a tu compañero qué hiciste ayer sábado.",
+                  "targetPhrasePt": "No sábado eu acordei cedo e tirei muitas fotos na praia.",
+                  "phoneticGuide": "Nu sá-ba-du éu a-cor-déi sê-du i tchi-réi múi-tas fó-tus na prái-a.",
+                  "translationEs": "El sábado me desperté temprano y saqué muchas fotos en la playa.",
+                  "keyPhonemesToWatch": [
+                    "acordei (/d/)",
+                    "cedo (/s/)",
+                    "tirei (/tʃi/)"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "block-b1-b2",
+      "code": "B1 - B2",
+      "title": "Bloque Intermedio: Fluidez y Espontaneidad",
+      "cefrRange": [
+        "B1",
+        "B2"
+      ],
+      "badgeColor": "amber",
+      "description": "Da el salto hacia la fluidez real: domina el Futuro do Subjuntivo (la joya gramatical del portugués que ya no se usa en español), la colocación de pronombres brasileña (próclise natural) y comprende podcasts y ambientes laborales reales.",
+      "grammarSummary": [
+        "Contraste Pretérito Perfeito vs. Imperfeito (incluyendo 'ia + infinitivo' como condicional oral: 'Eu ia gostar')",
+        "Presente do Subjuntivo y uso intensivo del Futuro do Subjuntivo ('Quando você chegar', 'Se você quiser', 'Assim que pudermos')",
+        "Colocación pronominal brasileña: predominio de próclise en el habla real ('Me liga', 'Te amo', 'Se senta') frente a la norma lusitana",
+        "Voz pasiva coloquial y conectores de fluidez ('Aliás', 'Pois é', 'Inclusive', 'Na verdade')"
+      ],
+      "lexiconAndSkills": [
+        "Expresiones idiomáticas, modismos (gírias), mundo laboral corporativo, viajes, salud y medios",
+        "Comprensión de podcasts reales, programas de TV y redacción de correos y textos claros"
+      ],
+      "modules": [
+        {
+          "id": "mod-b1-b2-1",
+          "level": "B1-B2",
+          "title": "Módulo 2: El Secreto de la Fluidez — Futuro do Subjuntivo y Pronombres Brasileños",
+          "durationMinutes": 60,
+          "lessons": [
+            {
+              "id": "les-b1-1",
+              "code": "B1.1 / B2.1",
+              "level": "B1-B2",
+              "title": "Quando você chegar e Se você quiser: Futuro do Subjuntivo & Próclise Real",
+              "duration": "45 min",
+              "xpReward": 250,
+              "isFullyPlayable": true,
+              "summary": "En español decimos 'Cuando llegues' (presente de subjuntivo) y 'Si quieres' (presente de indicativo). En portugués, AMBAS exigen el Futuro do Subjuntivo ('Quando você chegar', 'Se você quiser'). Dominar esto te hará sonar 100% fluido.",
+              "theory": {
+                "intro": "En el español moderno el futuro de subjuntivo (*'Adonde fueres, haz lo que vieres'*) desapareció hace siglos. En cambio, en el portugués de Brasil está **más vivo que nunca**: se usa decenas de veces al día tanto en la calle como en juntas directivas.",
+                "sections": [
+                  {
+                    "heading": "1. Futuro do Subjuntivo: El Contraste Crítico con el Español",
+                    "content": "Siempre que proyectes una condición o un momento hacia el futuro después de conectores como **Quando** (cuando), **Se** (si condicional), **Assim que** (tan pronto como), **Enquanto** (mientras) o **Sempre que** (siempre que), DEBES usar el Futuro do Subjuntivo:",
+                    "comparisonTable": [
+                      {
+                        "concept": "Temporal futura con 'Quando / Assim que'",
+                        "spanish": "Cuando llegues a casa, avísame (Presente Subjuntivo)",
+                        "ptBr": "Quando você chegar em casa, me avisa (Futuro Subjuntivo)",
+                        "note": "¡Nunca digas 'Quando você chegue'! 'Chegue' es Presente do Subjuntivo ('Espero que você chegue bem')."
+                      },
+                      {
+                        "concept": "Condicional real futura con 'Se'",
+                        "spanish": "Si tienes tiempo mañana, hablamos (Presente Indicativo)",
+                        "ptBr": "Se você tiver tempo amanhã, a gente conversa (Futuro Subjuntivo)",
+                        "note": "¡La trampa #1 de nivel B1/B2! En español después de 'Si' va presente ('Si puedes, si quieres, si vas'). En portugués va Futuro do Subjuntivo: 'Se você puder, se você quiser, se você for'."
+                      },
+                      {
+                        "concept": "Relativas proyectadas al futuro ('Quem / O que')",
+                        "spanish": "Haz lo que quieras / Quien venga temprano...",
+                        "ptBr": "Faça o que você quiser / Quem vier cedo...",
+                        "note": "Los verbos regulares coinciden con el infinitivo ('chegar', 'falar'), pero los 10 verbos irregulares más usados cambian su raíz."
+                      }
+                    ]
+                  },
+                  {
+                    "heading": "2. Los 8 Irregulares de Oro del Futuro do Subjuntivo",
+                    "content": "Truco mnemotécnico infalible: **toma la 3ª persona plural del Pretérito Perfeito (`Eles fizeram`) y quítale el `-am` final**:",
+                    "conjugationCards": [
+                      {
+                        "verb": "TER -> TIVER (de 'tiveram')",
+                        "forms": [
+                          "Eu / Você / Ele / A gente tiver",
+                          "Nós tivermos",
+                          "Vocês / Eles tiverem"
+                        ],
+                        "example": "Se você tiver alguma dúvida, me chama no WhatsApp."
+                      },
+                      {
+                        "verb": "IR / SER -> FOR (de 'foram')",
+                        "forms": [
+                          "Eu / Você / Ele / A gente for",
+                          "Nós formos",
+                          "Vocês / Eles forem"
+                        ],
+                        "example": "Quando você for ao Rio, visite Santa Teresa."
+                      },
+                      {
+                        "verb": "FAZER -> FIZER | QUERER -> QUISER",
+                        "forms": [
+                          "fizer / fizermos / fizerem",
+                          "quiser / quisermos / quiserem"
+                        ],
+                        "example": "Se fizer sol amanhã, a gente vai à praia se você quiser."
+                      },
+                      {
+                        "verb": "PODER -> PUDER | ESTAR -> ESTIVER | VIR -> VIER | VER -> VIR",
+                        "forms": [
+                          "Se eu puder",
+                          "Quando estiver pronto",
+                          "Quem vier (venir)",
+                          "Se você vir (ver) o João"
+                        ],
+                        "example": "¡Ojo! 'Se você vir' es del verbo VER; 'Se você vier' es del verbo VIR (venir)."
+                      }
+                    ]
+                  },
+                  {
+                    "heading": "3. Colocación Pronominal Brasileña (Próclise Real vs. Gramática Lusitana)",
+                    "content": "Mientras en Portugal dicen *'Dá-me um café'* (ênclise), en el portugués brasileño real el pronombre átono se coloca **antes del verbo principal** (próclise) y, en tiempos compuestos o locuciones verbales, se coloca justo **antes del verbo principal en infinitivo o gerundio** (*'Vou te ligar'*, *'Quero me inscrever'*), sin guion.",
+                    "comparisonTable": [
+                      {
+                        "concept": "Inicio de frase oral cotidiana",
+                        "spanish": "Avísame / Llámame",
+                        "ptBr": "Me avisa! / Me liga!",
+                        "note": "En el habla brasileña culta y popular es totalmente natural iniciar con 'Me... / Te...'."
+                      },
+                      {
+                        "concept": "Locuciones verbales (Auxiliar + Infinitivo/Gerundio)",
+                        "spanish": "Voy a explicarte / Estoy preparándome",
+                        "ptBr": "Vou te explicar / Estou me preparando",
+                        "note": "El pronombre va en medio, apoyado en el verbo principal."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "phonetics": [
+                {
+                  "symbol": "/ʁ/ final silente o leve + enlace",
+                  "grapheme": "Infinitivos vs Futuro do Subjuntivo",
+                  "contrastEs": "En el habla coloquial brasileña, la '-r' final de los infinitivos suele suavizarse o caer ('Vou falá', 'Vou fazê'), pero en el Futuro do Subjuntivo de verbos irregulares ('fizer', 'puder', 'quiser', 'estiver') la vocal tónica abierta y la R final se marcan con claridad.",
+                  "examples": [
+                    {
+                      "word": "Se você puder (/puˈdɛʁ/)",
+                      "ipa": "/si voˈse puˈdɛʁ/",
+                      "approxEs": "Con E abierta fuerte: pu-DÉR"
+                    },
+                    {
+                      "word": "Se você quiser (/kiˈzɛʁ/)",
+                      "ipa": "/si voˈse kiˈzɛʁ/",
+                      "approxEs": "S intervocálica sonora /z/ + E abierta: ki-ZÉR"
+                    }
+                  ]
+                }
+              ],
+              "falseFriends": [
+                {
+                  "ptWord": "Embaraçada",
+                  "ptMeaning": "Avergonzada, apenada o enredada/confusa",
+                  "esTrap": "Embarazada (gestante)",
+                  "correctPtForEs": "Grávida",
+                  "examplePt": "Fiquei super embaraçada quando esqueci o nome do cliente na reunião.",
+                  "exampleEs": "Me quedé súper avergonzada cuando olvidé el nombre del cliente en la reunión."
+                },
+                {
+                  "ptWord": "Oficina",
+                  "ptMeaning": "Taller mecánico (o taller práctico/workshop)",
+                  "esTrap": "Oficina corporativa (que en PT es 'escritório')",
+                  "correctPtForEs": "Escritório (despacho) / Oficina mecânica (taller)",
+                  "examplePt": "Deixei meu carro na oficina hoje cedo e fui de metrô para o escritório.",
+                  "exampleEs": "Dejé mi auto en el taller mecánico hoy temprano y fui en metro a la oficina."
+                },
+                {
+                  "ptWord": "Presunto",
+                  "ptMeaning": "Jamón cocido / Jamón de cerdo",
+                  "esTrap": "Presunto (supuesto culpable)",
+                  "correctPtForEs": "Suposto / Suspeito",
+                  "examplePt": "Quero um misto-quente com bastante queijo e presunto.",
+                  "exampleEs": "Quiero un sándwich mixto caliente con bastante queso y jamón."
+                },
+                {
+                  "ptWord": "Borrar",
+                  "ptMeaning": "Manchar o correrse el maquillaje/tinta",
+                  "esTrap": "Borrar (eliminar texto o archivo)",
+                  "correctPtForEs": "Apagar (texto/luz) / Deletar (archivo digital)",
+                  "examplePt": "Cuidado para não apagar o arquivo! A chuva borrou toda a tinta.",
+                  "exampleEs": "¡Cuidado con no borrar el archivo! La lluvia manchó/corrió toda la tinta."
+                }
+              ],
+              "imersaoReal": {
+                "id": "imersao-b2-podcast",
+                "type": "Podcast de Negocios & Vida Digital en Brasil",
+                "title": "Podcast 'Café & Carreira': Trabalho Remoto, Prazos e Imprevistos",
+                "artistOrSource": "Podcast Café & Carreira — Episódio #42 (São Paulo)",
+                "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/b2/podcast-cafe-carreira.opus",
+                "coverImage": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=900&q=80",
+                "culturalContext": "En el ambiente profesional brasileño, la comunicación combina alta calidez humana con agilidad digital. Observa cómo usan el `Futuro do Subjuntivo` y conectores como *'Pois é'* y *'Aliás'* de forma natural.",
+                "transcript": [
+                  {
+                    "id": "tb-1",
+                    "startTime": 0,
+                    "endTime": 7,
+                    "speaker": "Mariana (Host)",
+                    "pt": "Fala, pessoal! Se você estiver ouvindo a gente no trânsito ou no home office, seja muito bem-vindo.",
+                    "es": "¡Hola a todos! Si nos estás escuchando en el tráfico o en home office, sé muy bienvenido."
+                  },
+                  {
+                    "id": "tb-2",
+                    "startTime": 7,
+                    "endTime": 15,
+                    "speaker": "Rafael (Convidado)",
+                    "pt": "Pois é, Mari! Hoje meu carro deu problema, tive que deixar na oficina, mas assim que eu chegar no escritório vou te mandar o relatório.",
+                    "es": "¡Tal cual, Mari! Hoy mi auto falló, tuve que dejarlo en el taller mecánico, pero tan pronto como llegue a la oficina te voy a mandar el reporte."
+                  },
+                  {
+                    "id": "tb-3",
+                    "startTime": 15,
+                    "endTime": 23,
+                    "speaker": "Mariana (Host)",
+                    "pt": "Relaxa, sem estresse! Quando você puder revisar os números, a gente marca uma call rápida. Só cuidado para não apagar a planilha!",
+                    "es": "¡Tranquilo, sin estrés! Cuando puedas revisar los números, agendamos una llamada rápida. ¡Solo cuidado con no borrar la hoja de cálculo!"
+                  },
+                  {
+                    "id": "tb-4",
+                    "startTime": 23,
+                    "endTime": 30,
+                    "speaker": "Rafael (Convidado)",
+                    "pt": "Haha, pode deixar! Se o cliente quiser mudar o escopo, a gente negocia um novo prazo na hora.",
+                    "es": "Jaja, ¡déjalo en mis manos! Si el cliente quiere cambiar el alcance, negociamos un nuevo plazo en el momento."
+                  }
+                ],
+                "giriasNotes": [
+                  {
+                    "term": "Pois é!",
+                    "meaning": "Expresión comodín de acuerdo empático: '¡Tal cual!', '¡Así es!', 'Pues sí'."
+                  },
+                  {
+                    "term": "Pode deixar!",
+                    "meaning": "'¡Déjalo por mi cuenta!' / '¡Cuenta con ello!' (promesa de que te encargarás)."
+                  },
+                  {
+                    "term": "Marcar uma call / Dar um toque",
+                    "meaning": "Agendar una videollamada / Avisar con un mensaje rápido ('Me dá um toque quando chegar')."
+                  },
+                  {
+                    "term": "Planilha",
+                    "meaning": "Hoja de cálculo (Excel / Google Sheets)."
+                  }
+                ]
+              },
+              "exercises": [
+                {
+                  "id": "ex-b2-mc-1",
+                  "type": "multiple-choice",
+                  "title": "Dominando el Futuro do Subjuntivo vs. Portuñol",
+                  "question": "Quieres escribirle a tu jefe brasileño por Slack: 'Si tienes tiempo mañana cuando llegues a la oficina, te voy a mostrar el proyecto'. ¿Cuál es la única opción gramatical y léxicamente correcta?",
+                  "options": [
+                    {
+                      "id": "b2-opt-a",
+                      "text": "Se você tem tempo amanhã quando chegue na oficina, vou mostrar-te o projeto.",
+                      "isCorrect": false,
+                      "feedback": "Contiene 4 errores de interferencia del español: 'Se tem' (debe ser 'Se tiver'), 'quando chegue' (debe ser 'quando chegar'), 'oficina' (es taller mecánico; oficina es 'escritório') y 'mostrar-te' (en Brasil es 'vou te mostrar')."
+                    },
+                    {
+                      "id": "b2-opt-b",
+                      "text": "Se você tiver tempo amanhã quando chegar no escritório, vou te mostrar o projeto.",
+                      "isCorrect": true,
+                      "feedback": "¡Impecable nivel B2! Usaste 'tiver' y 'chegar' en Futuro do Subjuntivo, 'escritório' para oficina y la próclise brasileña 'vou te mostrar'."
+                    },
+                    {
+                      "id": "b2-opt-c",
+                      "text": "Se você tenha tempo amanhã quando chegará no escritório, te vou a mostrar o projeto.",
+                      "isCorrect": false,
+                      "feedback": "'Se tenha' y 'quando chegará' son incorrectos en portugués; además 'vou a mostrar' tiene la preposición 'a' intrusa."
+                    }
+                  ]
+                },
+                {
+                  "id": "ex-b2-fib-1",
+                  "type": "fill-in-the-blanks",
+                  "title": "Conjugación Intensiva de Futuro do Subjuntivo",
+                  "instruction": "Conjuga el verbo entre paréntesis en Futuro do Subjuntivo (3ª persona singular 'você/ele/a gente').",
+                  "items": [
+                    {
+                      "id": "fib-b2-1",
+                      "sentenceBefore": "Me avisa no WhatsApp assim que você ",
+                      "sentenceAfter": " (poder) falar cinco minutinhos.",
+                      "acceptedAnswers": [
+                        "puder"
+                      ],
+                      "hint": "De 'eles puderam' -> quita '-am'.",
+                      "explanation": "El Futuro do Subjuntivo de PODER es 'puder' (con 'u' en la raíz)."
+                    },
+                    {
+                      "id": "fib-b2-2",
+                      "sentenceBefore": "Se você ",
+                      "sentenceAfter": " (querer) alterar a planilha, faça um backup antes para não apagar nada.",
+                      "acceptedAnswers": [
+                        "quiser"
+                      ],
+                      "hint": "De 'eles quiseram' -> quita '-am' (se escribe con S).",
+                      "explanation": "El Futuro do Subjuntivo de QUERER es 'quiser' ('Se você quiser...')."
+                    },
+                    {
+                      "id": "fib-b2-3",
+                      "sentenceBefore": "Quando a proposta ",
+                      "sentenceAfter": " (estar) pronta, a gente envia para a diretoria.",
+                      "acceptedAnswers": [
+                        "estiver"
+                      ],
+                      "hint": "De 'eles estiveram' -> quita '-am'.",
+                      "explanation": "'Quando estiver pronta' = 'Cuando esté lista'."
+                    },
+                    {
+                      "id": "fib-b2-4",
+                      "sentenceBefore": "Se você ",
+                      "sentenceAfter": " (ver) a Mariana hoje no escritório, diga que eu mandei um abraço.",
+                      "acceptedAnswers": [
+                        "vir"
+                      ],
+                      "hint": "¡Cuidado! El Futuro do Subjuntivo de VER (mirar/ver) viene de 'eles viram'.",
+                      "explanation": "De VER es 'se você vir'; de VIR (venir) es 'se você vier'."
+                    }
+                  ]
+                },
+                {
+                  "id": "ex-b2-audio-1",
+                  "type": "audio-comprehension",
+                  "title": "Comprensión de Podcast Corporativo",
+                  "audioTextPt": "Hoje meu carro deu problema, tive que deixar na oficina, mas assim que eu chegar no escritório vou te mandar o relatório.",
+                  "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/b2/podcast-trecho-oficina.opus",
+                  "question": "Escucha a Rafael. ¿Dónde tuvo que dejar su auto y cuándo enviará el reporte (relatório)?",
+                  "acceptedKeywords": [
+                    "na oficina",
+                    "chegar no escritório",
+                    "assim que chegar"
+                  ],
+                  "multipleChoiceFallback": {
+                    "options": [
+                      {
+                        "id": "b2-ac-1",
+                        "text": "Dejó el auto en el taller (oficina) y enviará el reporte apenas llegue a la oficina (escritório).",
+                        "isCorrect": true
+                      },
+                      {
+                        "id": "b2-ac-2",
+                        "text": "Dejó el auto en la oficina de la empresa y borró el reporte por error.",
+                        "isCorrect": false
+                      },
+                      {
+                        "id": "b2-ac-3",
+                        "text": "Vendió el auto y enviará el reporte la próxima semana.",
+                        "isCorrect": false
+                      }
+                    ]
+                  },
+                  "explanation": "Observa el contraste en la misma frase entre 'oficina' (taller mecánico) y 'escritório' (oficina corporativa)."
+                },
+                {
+                  "id": "ex-b2-fc-1",
+                  "type": "flashcards",
+                  "title": "Flashcards B1-B2: Falsos Amigos y Gírias Profesionales",
+                  "cards": [
+                    {
+                      "id": "fc-b2-1",
+                      "frontPt": "Embaraçada vs. Grávida",
+                      "phonetic": "/ẽ.ba.ɾaˈsa.dɐ/ vs /ˈɡɾa.vi.dɐ/",
+                      "backEs": "Embaraçada = Avergonzada / confundida 😳 | Grávida = Embarazada 🤰",
+                      "examplePt": "Ela está grávida de seis meses.",
+                      "category": "Falso Amigo Clásico"
+                    },
+                    {
+                      "id": "fc-b2-2",
+                      "frontPt": "Apagar vs. Borrar",
+                      "phonetic": "/a.paˈɡaʁ/ vs /boˈhaʁ/",
+                      "backEs": "Apagar = Borrar (texto/pizarra) o apagar la luz | Borrar = Manchar / correrse la tinta",
+                      "examplePt": "Apaguei a mensagem sem querer!",
+                      "category": "Falso Amigo Digital"
+                    },
+                    {
+                      "id": "fc-b2-3",
+                      "frontPt": "Pode deixar!",
+                      "phonetic": "/ˈpɔ.dʒi dejˈʃaʁ/",
+                      "backEs": "¡Déjalo por mi cuenta! / ¡Yo me encargo!",
+                      "examplePt": "— Você envia o contrato hoje? — Pode deixar!",
+                      "category": "Expresión Idiomática"
+                    },
+                    {
+                      "id": "fc-b2-4",
+                      "frontPt": "Dar um jeito",
+                      "phonetic": "/ˈdaʁ ˈũ ˈʒej.tu/",
+                      "backEs": "Encontrar una solución / ingeniárselas para resolver algo",
+                      "examplePt": "O prazo está curto, mas a gente vai dar um jeito.",
+                      "category": "Cultura Brasileña"
+                    }
+                  ]
+                },
+                {
+                  "id": "ex-b2-sp-1",
+                  "type": "speaking-prompt",
+                  "title": "Práctica Conversacional B2: Coordinando una Reunión",
+                  "scenario": "Dile a tu colega brasileño por nota de voz que cuando llegue a la oficina y si tiene tiempo, le vas a mostrar el reporte.",
+                  "targetPhrasePt": "Quando você chegar no escritório, se você tiver tempo, vou te mostrar o relatório.",
+                  "phoneticGuide": "Kuán-du vo-sê she-gár nu is-cri-tó-riu, si vo-sê tchi-vér tém-pu, vôu tchi mos-trár u je-la-tó-riu.",
+                  "translationEs": "Cuando llegues a la oficina, si tienes tiempo, te voy a mostrar el reporte.",
+                  "keyPhonemesToWatch": [
+                    "chegar (/ʃ/)",
+                    "escritório (/ɔ/)",
+                    "tiver (/tʃiˈvɛʁ/)",
+                    "relatório (/h/)"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "block-c1-c2",
+      "code": "C1 - C2",
+      "title": "Bloque Avanzado: Dominio, Argumentación y Matices",
+      "cefrRange": [
+        "C1",
+        "C2"
+      ],
+      "badgeColor": "indigo",
+      "description": "Alcanza la maestría estilística y argumentativa: utiliza el Infinitivo Pessoal (exclusivo de la lengua portuguesa para dar precisión sin usar subjuntivos pesados), domina las reglas de la Crase (à / àquelas) y debate sobre economía, política y cultura con registro C2.",
+      "grammarSummary": [
+        "Infinitivo Pessoal flexionado ('Para nós fazermos', 'Antes de eles assinarem', 'Por serem especialistas')",
+        "Dominio absoluto de la Crase (a + a = à, àquele, àquela, locuciones adverbiales femeninas 'às vezes', 'à vista', 'à medida que')",
+        "Concordancia verbal y nominal avanzada, voz pasiva sintética y analítica, mesóclise literaria y conectores de alta diplomacia ('Outrossim', 'Sobretudo', 'Não obstante', 'Haja vista')"
+      ],
+      "lexiconAndSkills": [
+        "Tecnicismos profesionales, literatura comparada, política, macroeconomía y jerga local avanzada",
+        "Redacción de ensayos, pareceres ejecutivos, reportes formales y debate fluido con matices irónicos o diplomáticos"
+      ],
+      "modules": [
+        {
+          "id": "mod-c1-c2-1",
+          "level": "C1-C2",
+          "title": "Módulo 3: Alta Precisión — Infinitivo Pessoal, Crase y Retórica Ejecutiva",
+          "durationMinutes": 75,
+          "lessons": [
+            {
+              "id": "les-c1-1",
+              "code": "C1.1 / C2.1",
+              "level": "C1-C2",
+              "title": "O Infinitivo Pessoal, o Domínio da Crase (à) e Argumentação de Alto Nível",
+              "duration": "55 min",
+              "xpReward": 350,
+              "isFullyPlayable": true,
+              "summary": "Descubre la herramienta más elegante del portugués: flexionar el infinitivo por persona ('É fundamental analisarmos os riscos antes de eles tomarem a decisão') y domina la Crase ('à') sin dudar jamás al redactar.",
+              "theory": {
+                "intro": "En el nivel C1-C2, lo que distingue a un hablante verdaderamente culto en Brasil es su capacidad de **evitar cláusulas pesadas con 'que + subjuntivo'** gracias al **Infinitivo Pessoal**, y su precisión ortográfica y fonética en el uso de la **Crase (`à`)**.",
+                "sections": [
+                  {
+                    "heading": "1. El Infinitivo Pessoal: La Superpotencia Expresiva del Portugués",
+                    "content": "El portugués es una de las poquísimas lenguas romances que permite conjugar el infinitivo añadiendo desinencias personales (`-mos` para *nós*, `-em` para *vocês/eles*). Se usa después de preposiciones (`para, antes de, depois de, sem, até, por, apesar de`) o expresiones impersonales (`É essencial...`, `Convém...`) cuando quieres dejar claro el sujeto:",
+                    "comparisonTable": [
+                      {
+                        "concept": "Preposición + Infinitivo con cambio de sujeto",
+                        "spanish": "Antes de que ellos firmen el contrato, debemos revisarlo",
+                        "ptBr": "Antes de eles assinarem o contrato, precisamos revisá-lo",
+                        "note": "¡Nota que en portugués NO se dice 'Antes de que eles assinem', sino 'Antes de eles assinarem' (Infinitivo Pessoal)! Además, no se contrae 'de + eles' -> 'deles' porque 'eles' es el sujeto del infinitivo."
+                      },
+                      {
+                        "concept": "Expresión impersonal + 1ª persona plural",
+                        "spanish": "Es imprescindible que invirtamos en infraestrutura sostenible",
+                        "ptBr": "É imprescindível investirmos em infraestrutura sustentável",
+                        "note": "'Investirmos' es más conciso, elegante y directo que 'que nós invistamos'."
+                      },
+                      {
+                        "concept": "Causa con 'Por + Infinitivo Pessoal'",
+                        "spanish": "Dado que son mercados emergentes, exigen cautela",
+                        "ptBr": "Por serem mercados emergentes, exigem cautela",
+                        "note": "Construcción predilecta en periodismo económico (Valor Econômico, Folha) y ensayos C2."
+                      }
+                    ]
+                  },
+                  {
+                    "heading": "2. Dominio Definitivo de la Crase (`à`, `às`, `àquele`)",
+                    "content": "La **Crase** no es un acento fonético de tono, sino la **fusión de dos 'a'**: la preposición `a` (exigida por un verbo o nombre) + el artículo femenino `a / as` o el demostrativo `aquele / aquela / aquilo`.",
+                    "conjugationCards": [
+                      {
+                        "verb": "Regla de Oro del Reemplazo por Masculino ('AO')",
+                        "forms": [
+                          "Si al cambiar la palabra femenina por una masculina equivalente aparece 'AO / AOS', ¡SIEMPRE lleva crase 'À / ÀS'!",
+                          "Ej: 'Refiro-me à proposta' -> 'Refiro-me ao projeto' (¡Sí lleva crase!).",
+                          "Ej: 'Assistimos à apresentação' -> 'Assistimos ao filme' (¡Sí lleva crase!)."
+                        ],
+                        "example": "O relatório foi submetido à diretoria executiva."
+                      },
+                      {
+                        "verb": "Locuciones Femeninas Fijas (Con Crase Obligatoria)",
+                        "forms": [
+                          "Às vezes (a veces) | À vista (al contado) | À medida que (a medida que)",
+                          "À noite / À tarde | À disposição | Às pressas (de prisa)",
+                          "Horas exactas: 'A reunião começará às 14h30'."
+                        ],
+                        "example": "À medida que o cenário macroeconômico evolui, adaptamos a estratégia."
+                      },
+                      {
+                        "verb": "Los 4 Casos Donde la Crase está PROHIBIDA",
+                        "forms": [
+                          "1. Antes de verbos en infinitivo: 'Começou a crescer', 'A partir de hoje'.",
+                          "2. Antes de sustantivos masculinos: 'Pagamento a prazo', 'Andar a pé'.",
+                          "3. Antes de pronombres personales/indefinidos: 'Entreguei o documento a ela / a todas as áreas'.",
+                          "4. Expresiones de palabras repetidas: 'Dia a dia', 'Frente a frente', 'Cara a cara'."
+                        ],
+                        "example": "No dia a dia corporativo, começamos a priorizar entregas a curto prazo."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "phonetics": [
+                {
+                  "symbol": "Enlace culto y cadencia argumentativa C2",
+                  "grapheme": "Desinencias -mos y -rem en Infinitivo Pessoal",
+                  "contrastEs": "En el registro culto brasileño (C1-C2), la nasalización final de `-rem` (`/ɾẽj̃/`) en el Infinitivo Pessoal se articula nítidamente para distinguir el singular (`para ele fazer`) del plural (`para eles fazerem`).",
+                  "examples": [
+                    {
+                      "word": "Antes de eles decidirem",
+                      "ipa": "/ˈɐ̃.tʃiz dʒi ˈe.liz de.siˈdʒi.ɾẽj̃/",
+                      "approxEs": "án-tchis dchi é-lis de-si-DCHÍ-rein"
+                    },
+                    {
+                      "word": "Refiro-me àquela cláusula",
+                      "ipa": "/heˈfi.ɾu.mi aˈkɛ.lɐ ˈklaw.zu.lɐ/",
+                      "approxEs": "je-FÍ-ru-mi a-KÉ-la CLÁU-zu-la"
+                    }
+                  ]
+                }
+              ],
+              "falseFriends": [
+                {
+                  "ptWord": "Prejuízo",
+                  "ptMeaning": "Pérdida financiera / Daño o quebranto económico",
+                  "esTrap": "Prejuicio social o moral",
+                  "correctPtForEs": "Preconceito (prejuicio moral/social) vs. Prejuízo (pérdida económica)",
+                  "examplePt": "Combater o preconceito é um dever ético; já a má gestão gerou um prejuízo milionário.",
+                  "exampleEs": "Combatir el prejuicio es un deber ético; en cambio, la mala gestión generó una pérdida millonaria."
+                },
+                {
+                  "ptWord": "Assistir (a)",
+                  "ptMeaning": "Ver / Ser espectador de (un filme, una conferencia, un partido)",
+                  "esTrap": "Asistir físicamente a un lugar (ir/comparecer)",
+                  "correctPtForEs": "Comparecer (a) / Participar (de) / Ir (a)",
+                  "examplePt": "Mais de mil executivos compareceram ao congresso e assistiram à palestra de abertura.",
+                  "exampleEs": "Más de mil ejecutivos asistieron al congreso y vieron/presenciaron la conferencia inaugural."
+                },
+                {
+                  "ptWord": "Estafa",
+                  "ptMeaning": "Agotamiento extremo / Fatiga mental o burnout",
+                  "esTrap": "Estafa (fraude económico)",
+                  "correctPtForEs": "Golpe / Fraude / Estelionato",
+                  "examplePt": "Após meses de negociação intensa, o diretor teve uma estafa; felizmente evitamos o golpe financeiro.",
+                  "exampleEs": "Tras meses de negociación intensa, el director sufrió agotamiento extremo; felizmente evitamos la estafa financiera."
+                },
+                {
+                  "ptWord": "Lograr",
+                  "ptMeaning": "En coloquial brasileño significa engañar/burlar; en formal jurídico sólo se usa en 'lograr êxito'",
+                  "esTrap": "Lograr / Conseguir un objetivo en general",
+                  "correctPtForEs": "Conseguir / Alcançar / Atingir (uma meta)",
+                  "examplePt": "A empresa conseguiu atingir todas as metas trimestrais sem cair em armadilhas.",
+                  "exampleEs": "La empresa logró alcanzar todas las metas trimestrales sin caer en trampas."
+                }
+              ],
+              "imersaoReal": {
+                "id": "imersao-c2-debate",
+                "type": "Debate Económico & Escena de Serie Política Brasileña",
+                "title": "Painel Executivo: Transição Energética, Governança e Inovação na América Latina",
+                "artistOrSource": "Fórum Paulista de Economia & Sociedade (C1-C2)",
+                "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/c2/painel-economia-governanca.opus",
+                "coverImage": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
+                "culturalContext": "En debates ejecutivos, académicos y periodísticos en Brasil, se valora la diplomacia asertiva: conceder parcialmente la razón al interlocutor (*'Não obstante...'*, *'Faz sentido, porém...'*) antes de presentar un contraargumento contundente respaldado por datos.",
+                "transcript": [
+                  {
+                    "id": "tc-1",
+                    "startTime": 0,
+                    "endTime": 8,
+                    "speaker": "Dra. Helena Vasconcelos",
+                    "pt": "Boa noite a todos. À medida que avançamos na transição energética, torna-se imprescindível alinharmos a regulação às demandas reais da sociedade.",
+                    "es": "Buenas noches a todos. A medida que avanzamos en la transición energética, se vuelve imprescindible que alineemos la regulación a las demandas reales de la sociedad."
+                  },
+                  {
+                    "id": "tc-2",
+                    "startTime": 8,
+                    "endTime": 17,
+                    "speaker": "Dr. Eduardo Ribeiro",
+                    "pt": "Concordo plenamente, Helena. Não obstante os desafios fiscais a curto prazo, o fato de os investidores apostarem em matrizes limpas evita prejuízos futuros.",
+                    "es": "Concuerdo plenamente, Helena. No obstante los desafíos fiscales a corto plazo, el hecho de que los inversionistas apuesten por matrices limpias evita pérdidas futuras."
+                  },
+                  {
+                    "id": "tc-3",
+                    "startTime": 17,
+                    "endTime": 26,
+                    "speaker": "Dra. Helena Vasconcelos",
+                    "pt": "Sem dúvida. Antes de as empresas tomarem decisões precipitadas, cabe às lideranças combaterem qualquer preconceito contra novas tecnologias.",
+                    "es": "Sin duda. Antes de que las empresas tomen decisiones precipitadas, corresponde a los liderazgos combatir cualquier prejuicio contra nuevas tecnologías."
+                  }
+                ],
+                "giriasNotes": [
+                  {
+                    "term": "Não obstante / Haja vista",
+                    "meaning": "Conectores cultos de nivel C2 equivalentes a 'No obstante / A pesar de' y 'Teniendo en cuenta / Visto que'."
+                  },
+                  {
+                    "term": "O fato de eles apostarem",
+                    "meaning": "Construcción C1/C2 por excelencia: en lugar de 'El hecho de que ellos apuesten', el portugués usa 'O fato de + sujeto + Infinitivo Pessoal'."
+                  },
+                  {
+                    "term": "Dar com os burros n'água (jerga culta/idiomática)",
+                    "meaning": "Fracasar rotundamente en un intento o negocio mal planificado."
+                  }
+                ]
+              },
+              "exercises": [
+                {
+                  "id": "ex-c2-mc-1",
+                  "type": "multiple-choice",
+                  "title": "Precisión C2: Crase, Infinitivo Pessoal y Léxico Ejecutivo",
+                  "question": "Estás redactando un informe para el directorio en São Paulo y quieres expresar: 'A medida que reducimos los prejuicios internos, evitamos pérdidas a corto plazo antes de que los accionistas tomen una decisión'. ¿Cuál oración tiene nivel C2 impecable?",
+                  "options": [
+                    {
+                      "id": "c2-opt-a",
+                      "text": "À medida que reduzimos os preconceitos internos, evitamos prejuízos a curto prazo antes de os acionistas tomarem uma decisão.",
+                      "isCorrect": true,
+                      "feedback": "¡Brillante dominio C2! 'À medida que' lleva crase obligatoria, 'preconceitos' es prejuicios y 'prejuízos' pérdidas financieras, 'a curto prazo' NO lleva crase por ser masculino, y 'antes de os acionistas tomarem' usa el Infinitivo Pessoal sin contraer 'de + os'."
+                    },
+                    {
+                      "id": "c2-opt-b",
+                      "text": "A medida que reduzimos os prejuízos internos, evitamos perdas à curto prazo antes de que os acionistas tomem uma decisão.",
+                      "isCorrect": false,
+                      "feedback": "Falta la crase en 'À medida que', confunde 'prejuízos' con 'preconceitos', pone crase prohibida antes del masculino 'curto prazo' y calca 'antes de que tomem' del español."
+                    },
+                    {
+                      "id": "c2-opt-c",
+                      "text": "À medida que reduzimos os preconceitos internos, evitamos estafas à curto prazo antes dos acionistas tomar uma decisão.",
+                      "isCorrect": false,
+                      "feedback": "'Estafa' es fatiga mental, 'à curto prazo' es error de crase antes de palabra masculina, y falta flexionar 'tomarem'."
+                    }
+                  ]
+                },
+                {
+                  "id": "ex-c2-fib-1",
+                  "type": "fill-in-the-blanks",
+                  "title": "Aplicación Quirúrgica de Crase e Infinitivo Pessoal",
+                  "instruction": "Completa los espacios con la forma exacta (con o sin crase 'à / a / àquela' o el Infinitivo Pessoal correspondiente).",
+                  "items": [
+                    {
+                      "id": "fib-c2-1",
+                      "sentenceBefore": "A diretoria submeteu o parecer ",
+                      "sentenceAfter": " (a + a -> crase) comissão de auditoria ontem às 18h.",
+                      "acceptedAnswers": [
+                        "à"
+                      ],
+                      "hint": "Si cambias 'comissão' por 'conselho', dirías 'submeteu o parecer AO conselho'.",
+                      "explanation": "'Submeter algo à comissão' exige preposición 'a' + artículo femenino 'a' = 'à'."
+                    },
+                    {
+                      "id": "fib-c2-2",
+                      "sentenceBefore": "É fundamental nós ",
+                      "sentenceAfter": " (atingir en Infinitivo Pessoal 1ª plural) as metas de sustentabilidade deste ano.",
+                      "acceptedAnswers": [
+                        "atingirmos"
+                      ],
+                      "hint": "Infinitivo 'atingir' + desinencia '-mos' de 'nós'.",
+                      "explanation": "'É fundamental atingirmos' es mucho más fluido y elegante que 'que nós atinjamos'."
+                    },
+                    {
+                      "id": "fib-c2-3",
+                      "sentenceBefore": "No dia ",
+                      "sentenceAfter": " (a / à) dia da operação, começamos a implementar melhorias contínuas.",
+                      "acceptedAnswers": [
+                        "a"
+                      ],
+                      "hint": "Recuerda la regla: en palabras repetidas ('dia _ dia', 'cara _ cara') la crase está prohibida.",
+                      "explanation": "Nunca se usa crase entre palabras repetidas: 'dia a dia', 'frente a frente'."
+                    },
+                    {
+                      "id": "fib-c2-4",
+                      "sentenceBefore": "O sucesso do projeto depende de os diretores ",
+                      "sentenceAfter": " (aprovar en Infinitivo Pessoal 3ª plural) o orçamento.",
+                      "acceptedAnswers": [
+                        "aprovarem"
+                      ],
+                      "hint": "Infinitivo 'aprovar' + desinencia '-em' de 'eles/os diretores'.",
+                      "explanation": "'Depende de os diretores aprovarem' utiliza el Infinitivo Pessoal en 3ª persona plural."
+                    }
+                  ]
+                },
+                {
+                  "id": "ex-c2-audio-1",
+                  "type": "audio-comprehension",
+                  "title": "Comprensión de Debate Económico C2",
+                  "audioTextPt": "Não obstante os desafios fiscais a curto prazo, o fato de os investidores apostarem em matrizes limpas evita prejuízos futuros.",
+                  "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/c2/debate-trecho-investidores.opus",
+                  "question": "Escucha la intervención del Dr. Eduardo Ribeiro. ¿Qué estructura usa con el verbo 'apostar' y qué significa 'prejuízos futuros' en este contexto?",
+                  "acceptedKeywords": [
+                    "apostarem",
+                    "evita prejuízos",
+                    "pérdidas futuras"
+                  ],
+                  "multipleChoiceFallback": {
+                    "options": [
+                      {
+                        "id": "c2-ac-1",
+                        "text": "Usa el Infinitivo Pessoal ('o fato de os investidores apostarem') y 'prejuízos futuros' significa pérdidas financieras futuras.",
+                        "isCorrect": true
+                      },
+                      {
+                        "id": "c2-ac-2",
+                        "text": "Usa el Presente do Subjuntivo ('que apostem') y 'prejuízos' significa prejuicios ideológicos.",
+                        "isCorrect": false
+                      },
+                      {
+                        "id": "c2-ac-3",
+                        "text": "Usa el Futuro do Indicativo ('apostarão') y 'prejuízos' significa juicios legales anticipados.",
+                        "isCorrect": false
+                      }
+                    ]
+                  },
+                  "explanation": "'O fato de os investidores apostarem' ejemplifica el Infinitivo Pessoal y 'prejuízos' se refiere a pérdidas económicas."
+                },
+                {
+                  "id": "ex-c2-fc-1",
+                  "type": "flashcards",
+                  "title": "Flashcards C1-C2: Alta Diplomacia, Crase y Falsos Amigos Cultos",
+                  "cards": [
+                    {
+                      "id": "fc-c2-1",
+                      "frontPt": "O Prejuízo vs. O Preconceito",
+                      "phonetic": "/pɾe.ʒuˈi.zu/ vs /pɾe.kõˈsej.tu/",
+                      "backEs": "Prejuízo = Pérdida financiera / daño 📉 | Preconceito = Prejuicio social/moral",
+                      "examplePt": "O preconceito trava a inovação; o prejuízo contábil foi revertido.",
+                      "category": "Falso Amigo C1/C2"
+                    },
+                    {
+                      "id": "fc-c2-2",
+                      "frontPt": "À medida que vs. Na medida em que",
+                      "phonetic": "/a meˈdʒi.dɐ ki/",
+                      "backEs": "À medida que = Proporción progresiva ('a medida que') | Na medida em que = Causa ('dado que / puesto que')",
+                      "examplePt": "À medida que o mercado cresce, investimos mais.",
+                      "category": "Norma Culta & Crase"
+                    },
+                    {
+                      "id": "fc-c2-3",
+                      "frontPt": "A Estafa vs. O Golpe",
+                      "phonetic": "/isˈta.fɐ/ vs /ˈɡow.pi/",
+                      "backEs": "Estafa = Fatiga mental / agotamiento extremo | Golpe / Fraude = Estafa económica",
+                      "examplePt": "Cuidado para não cair no golpe do falso boleto!",
+                      "category": "Falso Amigo"
+                    },
+                    {
+                      "id": "fc-c2-4",
+                      "frontPt": "Por serem / Antes de analisarmos",
+                      "phonetic": "/puʁ ˈse.ɾẽj̃/ / /a.na.liˈzaʁ.mus/",
+                      "backEs": "Infinitivo Pessoal: 'Por ser ellos...' / 'Antes de que nosotros analicemos...'",
+                      "examplePt": "Antes de analisarmos a cláusula, ouviremos o jurídico.",
+                      "category": "Gramática C2"
+                    }
+                  ]
+                },
+                {
+                  "id": "ex-c2-sp-1",
+                  "type": "speaking-prompt",
+                  "title": "Argumentación Oral C2 (Web Speech API pt-BR)",
+                  "scenario": "Intervén en una junta directiva en São Paulo usando crase e Infinitivo Pessoal con dicción ejecutiva.",
+                  "targetPhrasePt": "À medida que avançamos no projeto, é fundamental alinharmos a estratégia para evitarmos prejuízos.",
+                  "phoneticGuide": "A me-dchí-da ki a-van-sá-mus nu pro-shé-tu, é fun-da-men-táu a-li-ñár-mus a is-tra-té-shia pá-ra e-vi-tár-mus pre-shu-í-zus.",
+                  "translationEs": "A medida que avanzamos en el proyecto, es fundamental que alineemos la estrategia para evitar pérdidas.",
+                  "keyPhonemesToWatch": [
+                    "medida (/dʒi/)",
+                    "projeto (/ʒɛ/)",
+                    "alinharmos (/ɲ/)",
+                    "prejuízos (/ʒuˈi.zus/)"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

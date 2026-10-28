@@ -1,0 +1,34 @@
+# Espacio temporal para datos intermedios
+.tmp/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secretos, variables de entorno y credenciales OAuth
+.env
+.env.*
+!.env.example
+*credentials*.json
+*client_secret*.json
+*.pem
+*.key
+
+# Estado y artefactos de Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+!*.tfvars.example
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Node.js (Azure Functions API)
+node_modules/
+.DS_Store

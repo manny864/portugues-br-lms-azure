@@ -1,0 +1,25 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/images/*.{png,jpg,gif,webp}",
+      "/css/*",
+      "/js/*",
+      "/data/*",
+      "/api/*"
+    ]
+  },
+  "routes": [
+    {
+      "route": "/api/progress",
+      "allowedRoles": [
+        "anonymous",
+        "authenticated"
+      ]
+    }
+  ],
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY"
+  }
+}

@@ -1,0 +1,14 @@
+# Copia este archivo a terraform.tfvars y define tu token de GitHub antes de ejecutar terraform apply
+project_name            = "ptbrlms"
+environment             = "prod"
+location                = "eastus2"
+swa_location            = "eastus2"
+swa_sku_tier            = "Free"
+enable_cosmos_free_tier = false
+speech_sku              = "F0"
+github_repo_owner       = "manny864"
+github_repo_name        = "portugues-br-lms-azure"
+runner_deployment_mode  = "ACA"
+
+# Token PAT de GitHub con scope 'repo' y 'workflow' para registrar el Self-Hosted Runner en Azure:
+# github_pat            = "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
