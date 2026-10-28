@@ -2557,11 +2557,30 @@ API_FUNCTION_JSON = {
     ]
 }
 
+API_HOST_JSON = {
+    "version": "2.0",
+    "logging": {
+        "applicationInsights": {
+            "samplingSettings": {
+                "isEnabled": True,
+                "excludedTypes": "Request"
+            }
+        }
+    },
+    "extensionBundle": {
+        "id": "Microsoft.Azure.Functions.ExtensionBundle",
+        "version": "[4.*, 5.0.0)"
+    }
+}
+
 API_PACKAGE_JSON = {
     "name": "ptbr-lms-swa-api",
     "version": "1.0.0",
     "description": "Managed Azure Functions API for Sotaque Brasileiro LMS connected to Azure Cosmos DB Serverless",
     "main": "progress/index.js",
+    "engines": {
+        "node": "20.x"
+    },
     "dependencies": {
         "@azure/cosmos": "^4.1.0"
     }
@@ -2601,6 +2620,7 @@ def main():
     # Archivos de Azure Static Web Apps y Azure Functions (/api/progress)
     (API_DIR / "index.js").write_text(API_PROGRESS_INDEX_JS.strip() + "\n", encoding="utf-8")
     (API_DIR / "function.json").write_text(json.dumps(API_FUNCTION_JSON, indent=2) + "\n", encoding="utf-8")
+    (BASE_DIR / "api" / "host.json").write_text(json.dumps(API_HOST_JSON, indent=2) + "\n", encoding="utf-8")
     (BASE_DIR / "api" / "package.json").write_text(json.dumps(API_PACKAGE_JSON, indent=2) + "\n", encoding="utf-8")
     (BASE_DIR / "staticwebapp.config.json").write_text(json.dumps(STATICWEBAPP_CONFIG, indent=2) + "\n", encoding="utf-8")
 

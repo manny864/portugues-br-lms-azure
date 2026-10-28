@@ -629,12 +629,16 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Validate Curriculum JSON & Regenerative Scripts
+      - name: Validate Curriculum JSON & Prepare Clean Web Bundle (dist/)
         run: |
           python3 scripts/generate_curriculum.py
           python3 scripts/generate_frontend.py
           python3 -m json.tool data/curriculum.json > /dev/null
-          echo "Curriculum JSON validado correctamente."
+          rm -rf dist
+          mkdir -p dist
+          cp index.html staticwebapp.config.json dist/
+          cp -r css js data dist/
+          echo "Bundle web estático preparado en dist/ y Curriculum JSON validado."
 
       - name: Deploy to Azure Static Web Apps (si el token está configurado)
         if: ${{ env.SWA_API_TOKEN != '' }}
@@ -645,7 +649,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/"
+          app_location: "dist"
           api_location: "api"
           output_location: ""
           skip_app_build: true
