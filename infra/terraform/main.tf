@@ -50,7 +50,7 @@ resource "azurerm_cosmosdb_account" "lms_cosmos" {
   resource_group_name        = azurerm_resource_group.main.name
   offer_type                 = "Standard"
   kind                       = "GlobalDocumentDB"
-  enable_free_tier           = var.enable_cosmos_free_tier
+  free_tier_enabled          = var.enable_cosmos_free_tier
   automatic_failover_enabled = false
 
   # Enfoque FinOps: Modo Serverless ($0 USD/mes en reposo, cobro solo por RU consumida)
