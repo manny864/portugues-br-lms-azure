@@ -151,9 +151,17 @@ export class CourseEngine {
     }
   }
 
+  _resolveFallbackBlobUrl(cdnUrl) {
+    if (!cdnUrl) return null;
+    return cdnUrl.replace(
+      /^https:\/\/ep-ptbrlms-prod-([a-z0-9]+)-[a-z0-9]+\.z01\.azurefd\.net\/media\//i,
+      'https://ptbrlmsprod$1.blob.core.windows.net/media/'
+    );
+  }
+
   /**
    * Inicia o pausa la reproducción sincronizada de "Imersão Real"
-   * Reproduciendo el archivo .opus real desde Azure Front Door CDN / Blob Storage
+   * Reproduciendo el archivo .opus real desde Azure Front Door CDN -> Fallback Azure Blob Storage
    * con control nativo de velocidad (0.75x, 1x y 1.25x) y resaltando la transcripción en vivo.
    */
   toggleImersaoPlayback(imersao, lessonId, onTickCallback, onStateChange) {
@@ -170,8 +178,8 @@ export class CourseEngine {
     if (onStateChange) onStateChange(true);
 
     if (imersao.mediaUrl) {
-      try {
-        const audio = new Audio(imersao.mediaUrl);
+      const tryPlayUrl = (urlToPlay, isRetry = false) => {
+        const audio = new Audio(urlToPlay);
         audio.crossOrigin = 'anonymous';
         audio.playbackRate = this.playbackRate || 1.0;
         this.htmlAudio = audio;
@@ -179,7 +187,6 @@ export class CourseEngine {
         audio.addEventListener('timeupdate', () => {
           const totalDur = (audio.duration && isFinite(audio.duration)) ? audio.duration : fallbackDuration;
           const cur = audio.currentTime;
-          // Escalar proporcionalmente los tiempos del transcript a la duración real del audio .opus
           const ratio = fallbackDuration / totalDur;
           const mappedTime = cur * ratio;
           const activeLine = transcript.find(t => mappedTime >= t.startTime && mappedTime < t.endTime);
@@ -202,12 +209,17 @@ export class CourseEngine {
         });
 
         audio.play().catch(() => {
-          this._runSimulatedTtsImersao(imersao, lessonId, transcript, fallbackDuration, onTickCallback, onStateChange);
+          const directBlob = this._resolveFallbackBlobUrl(imersao.mediaUrl);
+          if (!isRetry && directBlob && directBlob !== urlToPlay) {
+            tryPlayUrl(directBlob, true);
+          } else {
+            this._runSimulatedTtsImersao(imersao, lessonId, transcript, fallbackDuration, onTickCallback, onStateChange);
+          }
         });
-        return;
-      } catch (e) {
-        // Fallback a TTS
-      }
+      };
+
+      tryPlayUrl(imersao.mediaUrl, false);
+      return;
     }
 
     this._runSimulatedTtsImersao(imersao, lessonId, transcript, fallbackDuration, onTickCallback, onStateChange);
@@ -957,7 +969,18 @@ export class CourseEngine {
               audio.crossOrigin = 'anonymous';
               audio.playbackRate = rate;
               this.htmlAudio = audio;
-              audio.play().catch(() => this.speakPortuguese(text, rate));
+              audio.play().catch(() => {
+                const fallbackBlob = this._resolveFallbackBlobUrl(ex.mediaUrl);
+                if (fallbackBlob && fallbackBlob !== ex.mediaUrl) {
+                  const audio2 = new Audio(fallbackBlob);
+                  audio2.crossOrigin = 'anonymous';
+                  audio2.playbackRate = rate;
+                  this.htmlAudio = audio2;
+                  audio2.play().catch(() => this.speakPortuguese(text, rate));
+                } else {
+                  this.speakPortuguese(text, rate);
+                }
+              });
             } else {
               this.speakPortuguese(text, rate);
             }
