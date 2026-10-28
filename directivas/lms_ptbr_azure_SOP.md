@@ -56,6 +56,11 @@ Construir una aplicación web educativa completa (LMS ligero tipo SPA) para ense
    - `.github/workflows/deploy-azure-swa.yml`
    - `.github/workflows/terraform-infra.yml`
    - `.github/workflows/finops-shift-left.yml`: Workflow de estimación de costos en Pull Requests con `cscloudsolutions/azure-finops-action@v1`, `api-url: https://finops.cscloudsolutions.com.ar`, `script-sha256: 788ffa3bcedc1b413b316d356cf818361a74dade8df86caddde1c9843533b684`, `threshold-usd: '300'` y carpeta de Terraform `infra/terraform`.
+3. **Configuración de Credenciales Federadas OIDC en Azure Entra ID y Secretos de GitHub (`scripts/setup_azure_oidc_github.py`)**:
+   - Crear/reutilizar de forma idempotente la App Registration `sp-github-oidc-ptbr-lms` en Microsoft Entra ID y su Service Principal.
+   - Asignar el rol `Reader` a nivel de la suscripción de Azure para que `terraform plan` pueda consultar recursos y data sources en los Pull Requests.
+   - Configurar las Federated Identity Credentials con issuer `https://token.actions.githubusercontent.com`, audience `api://AzureADTokenExchange` y subjects `repo:manny864/portugues-br-lms-azure:pull_request` y `repo:manny864/portugues-br-lms-azure:ref:refs/heads/main`.
+   - Guardar automáticamente `AZURE_CLIENT_ID`, `AZURE_TENANT_ID` y `AZURE_SUBSCRIPTION_ID` (además de `AZURE_STATIC_WEB_APPS_API_TOKEN` si existe estado local de Terraform) como secretos de GitHub Actions en `manny864/portugues-br-lms-azure`.
 
 ## 4. Salidas (Outputs)
 - Aplicación web completa en la raíz del proyecto (`index.html`, `css/styles.css`, `js/auth.js`, `js/progress.js`, `js/engine.js`, `js/app.js`, `data/curriculum.json`).
