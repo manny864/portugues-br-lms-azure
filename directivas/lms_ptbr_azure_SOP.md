@@ -61,6 +61,11 @@ Construir una aplicación web educativa completa (LMS ligero tipo SPA) para ense
    - Asignar el rol `Reader` a nivel de la suscripción de Azure para que `terraform plan` pueda consultar recursos y data sources en los Pull Requests.
    - Configurar las Federated Identity Credentials con issuer `https://token.actions.githubusercontent.com`, audience `api://AzureADTokenExchange` y subjects `repo:manny864/portugues-br-lms-azure:pull_request` y `repo:manny864/portugues-br-lms-azure:ref:refs/heads/main`.
    - Guardar automáticamente `AZURE_CLIENT_ID`, `AZURE_TENANT_ID` y `AZURE_SUBSCRIPTION_ID` (además de `AZURE_STATIC_WEB_APPS_API_TOKEN` si existe estado local de Terraform) como secretos de GitHub Actions en `manny864/portugues-br-lms-azure`.
+4. **Generación de Audios Neuronales `.opus` con Azure AI Speech y Subida a Azure Blob Storage + Front Door CDN (`scripts/generate_and_upload_audios.py`)**:
+   - Extraer dinámicamente la clave de `cog-speech-ptbrlms-prod-*`, la cuenta de Storage (`ptbrlmsprodrhjee`) y el endpoint de Front Door CDN (`frontdoor_cdn_media_url`) desde Azure / Terraform outputs.
+   - Sintetizar en formato `ogg-24khz-16bit-mono-opus` (formato Opus nativo de Azure Cognitive Services Speech) todos los diálogos de **"Imersão Real"** y los ejercicios de comprensión auditiva (`a1/`, `a2/`, `b2/`, `c2/`) utilizando SSML multi-voz con voces neuronales brasileñas reales (`pt-BR-FranciscaNeural`, `pt-BR-AntonioNeural`, `pt-BR-ThalitaNeural`).
+   - Subir cada archivo `.opus` al contenedor `media` en Azure Blob Storage con `content-type: audio/ogg` y verificar su disponibilidad a través de `frontdoor_cdn_media_url` y `blob_storage_primary_endpoint`.
+   - Actualizar `/data/curriculum.json` y `js/engine.js` para reproducir el stream de audio real `.opus` con control nativo de `playbackRate` (`0.75x`, `1x`, `1.25x`) y fallback automático a Web Speech API.
 
 ## 4. Salidas (Outputs)
 - Aplicación web completa en la raíz del proyecto (`index.html`, `css/styles.css`, `js/auth.js`, `js/progress.js`, `js/engine.js`, `js/app.js`, `data/curriculum.json`).

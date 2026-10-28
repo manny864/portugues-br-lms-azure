@@ -789,7 +789,8 @@ export class CourseEngine {
 
   /**
    * Inicia o pausa la reproducción sincronizada de "Imersão Real"
-   * Soportando velocidades 0.75x, 1x y 1.25x y resaltando la transcripción en vivo.
+   * Reproduciendo el archivo .opus real desde Azure Front Door CDN / Blob Storage
+   * con control nativo de velocidad (0.75x, 1x y 1.25x) y resaltando la transcripción en vivo.
    */
   toggleImersaoPlayback(imersao, lessonId, onTickCallback, onStateChange) {
     if (this.isPlaying) {
@@ -799,17 +800,60 @@ export class CourseEngine {
     }
 
     const transcript = imersao.transcript || [];
-    const totalDuration = transcript.length > 0 ? transcript[transcript.length - 1].endTime : 30;
-    this.duration = totalDuration;
-    if (this.currentTime >= totalDuration) {
-      this.currentTime = 0;
-    }
-
+    const fallbackDuration = transcript.length > 0 ? transcript[transcript.length - 1].endTime : 30;
+    this.duration = fallbackDuration;
     this.isPlaying = true;
     if (onStateChange) onStateChange(true);
 
-    let lastSpokenLineId = null;
+    if (imersao.mediaUrl) {
+      try {
+        const audio = new Audio(imersao.mediaUrl);
+        audio.crossOrigin = 'anonymous';
+        audio.playbackRate = this.playbackRate || 1.0;
+        this.htmlAudio = audio;
 
+        audio.addEventListener('timeupdate', () => {
+          const totalDur = (audio.duration && isFinite(audio.duration)) ? audio.duration : fallbackDuration;
+          const cur = audio.currentTime;
+          // Escalar proporcionalmente los tiempos del transcript a la duración real del audio .opus
+          const ratio = fallbackDuration / totalDur;
+          const mappedTime = cur * ratio;
+          const activeLine = transcript.find(t => mappedTime >= t.startTime && mappedTime < t.endTime);
+          if (onTickCallback) {
+            onTickCallback(cur, totalDur, activeLine);
+          }
+        });
+
+        audio.addEventListener('ended', () => {
+          const totalDur = (audio.duration && isFinite(audio.duration)) ? audio.duration : fallbackDuration;
+          this.stopAudio();
+          if (onStateChange) onStateChange(false);
+          this.progressService.recordAudioPlayback({
+            imersaoId: imersao.id,
+            lessonId,
+            title: imersao.title,
+            timestampSeconds: Math.round(totalDur),
+            playbackRate: this.playbackRate
+          });
+        });
+
+        audio.play().catch(() => {
+          this._runSimulatedTtsImersao(imersao, lessonId, transcript, fallbackDuration, onTickCallback, onStateChange);
+        });
+        return;
+      } catch (e) {
+        // Fallback a TTS
+      }
+    }
+
+    this._runSimulatedTtsImersao(imersao, lessonId, transcript, fallbackDuration, onTickCallback, onStateChange);
+  }
+
+  _runSimulatedTtsImersao(imersao, lessonId, transcript, totalDuration, onTickCallback, onStateChange) {
+    if (this.currentTime >= totalDuration) {
+      this.currentTime = 0;
+    }
+    let lastSpokenLineId = null;
     const speakActiveLineIfNeeded = (timeSec) => {
       const activeLine = transcript.find(t => timeSec >= t.startTime && timeSec < t.endTime);
       if (activeLine && activeLine.id !== lastSpokenLineId) {
@@ -1543,7 +1587,16 @@ export class CourseEngine {
           playBtn.addEventListener('click', () => {
             const text = playBtn.getAttribute('data-audio-text');
             const rate = parseFloat(playBtn.getAttribute('data-audio-rate') || '1.0');
-            this.speakPortuguese(text, rate);
+            if (ex.mediaUrl) {
+              this.stopAudio();
+              const audio = new Audio(ex.mediaUrl);
+              audio.crossOrigin = 'anonymous';
+              audio.playbackRate = rate;
+              this.htmlAudio = audio;
+              audio.play().catch(() => this.speakPortuguese(text, rate));
+            } else {
+              this.speakPortuguese(text, rate);
+            }
           });
         });
 

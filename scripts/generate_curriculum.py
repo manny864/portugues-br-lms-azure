@@ -23,7 +23,7 @@ def build_curriculum() -> dict:
             "subtitle": "LMS Contrastivo Español ↔ Portugués Brasileño desde Supervivencia (A1) hasta Dominio Ejecutivo y Cultural (C2)",
             "version": "2.0.0",
             "targetAudience": "Hispanohablantes (América Latina y España)",
-            "azureMediaBaseUrl": "https://cdn-ptbr-lms.azurefd.net/media",
+            "azureMediaBaseUrl": "https://ep-ptbrlms-prod-rhjee-f5hcfrg3dre8axb4.z01.azurefd.net/media",
             "speechAssessmentLocale": "pt-BR",
             "recommendedVoices": ["pt-BR-FranciscaNeural", "pt-BR-AntonioNeural"]
         },
@@ -213,7 +213,7 @@ def build_curriculum() -> dict:
                                     "type": "Música MPB / Bossa Nova & Diálogo de Boteco",
                                     "title": "Manhã na Padaria & Bossa Acústica em Ipanema",
                                     "artistOrSource": "Estúdio MPB Carioca — Sessão Acústica (A1)",
-                                    "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/a1/bossa-padaria-ipanema.opus",
+                                    "mediaUrl": "https://ep-ptbrlms-prod-rhjee-f5hcfrg3dre8axb4.z01.azurefd.net/media/a1/bossa-padaria-ipanema.opus",
                                     "coverImage": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=900&q=80",
                                     "culturalContext": "En Brasil, pedir algo usando el imperativo seco ('Me dá um café') suena brusco si no se suaviza con la entonación o con la expresión mágica **'Me vê...'** ('¿Me pones / me traes...?') acompañada de **'por gentileza'** o **'por favor'**.",
                                     "transcript": [
@@ -341,7 +341,7 @@ def build_curriculum() -> dict:
                                         "type": "audio-comprehension",
                                         "title": "Comprensión Auditiva: En la Padaria de Ipanema",
                                         "audioTextPt": "Tudo ótimo! Me vê um pão de queijo quentinho e um copo de suco de laranja, por gentileza. Vou pagar no Pix.",
-                                        "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/a1/pedido-padaria.opus",
+                                        "mediaUrl": "https://ep-ptbrlms-prod-rhjee-f5hcfrg3dre8axb4.z01.azurefd.net/media/a1/pedido-padaria.opus",
                                         "question": "Escucha el audio del cliente (puedes usar velocidad 0.75x o 1x) y escribe en portugués exactamente qué bebida pidió (3 o 4 palabras clave) o selecciona la respuesta correcta:",
                                         "acceptedKeywords": ["suco de laranja", "copo de suco", "um copo de suco de laranja"],
                                         "multipleChoiceFallback": {
@@ -470,7 +470,7 @@ def build_curriculum() -> dict:
                                     "type": "Diálogo Real & Crónica Urbana",
                                     "title": "Segunda-feira no Trabalho: Como foi o fim de semana?",
                                     "artistOrSource": "Podcast Cotidiano Paulista (A2)",
-                                    "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/a2/fim-de-semana-sp.opus",
+                                    "mediaUrl": "https://ep-ptbrlms-prod-rhjee-f5hcfrg3dre8axb4.z01.azurefd.net/media/a2/fim-de-semana-sp.opus",
                                     "coverImage": "https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?auto=format&fit=crop&w=900&q=80",
                                     "culturalContext": "Los lunes (*segunda-feira*) en cualquier oficina o grupo de amigos brasileños la conversación gira en torno a cómo estuvo el *final de semana* (*fds* en WhatsApp).",
                                     "transcript": [
@@ -538,7 +538,7 @@ def build_curriculum() -> dict:
                                         "type": "audio-comprehension",
                                         "title": "Escucha la Rutina del Sábado",
                                         "audioTextPt": "No sábado eu acordei cedo, fiz feira e à noite a gente tirou várias fotos no show.",
-                                        "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/a2/rotina-sabado.opus",
+                                        "mediaUrl": "https://ep-ptbrlms-prod-rhjee-f5hcfrg3dre8axb4.z01.azurefd.net/media/a2/rotina-sabado.opus",
                                         "question": "¿Qué hizo Lucas el sábado por la mañana después de despertarse temprano?",
                                         "acceptedKeywords": ["fiz feira", "fez feira", "feira"],
                                         "multipleChoiceFallback": {
@@ -744,7 +744,7 @@ def build_curriculum() -> dict:
                                     "type": "Podcast de Negocios & Vida Digital en Brasil",
                                     "title": "Podcast 'Café & Carreira': Trabalho Remoto, Prazos e Imprevistos",
                                     "artistOrSource": "Podcast Café & Carreira — Episódio #42 (São Paulo)",
-                                    "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/b2/podcast-cafe-carreira.opus",
+                                    "mediaUrl": "https://ep-ptbrlms-prod-rhjee-f5hcfrg3dre8axb4.z01.azurefd.net/media/b2/podcast-cafe-carreira.opus",
                                     "coverImage": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=900&q=80",
                                     "culturalContext": "En el ambiente profesional brasileño, la comunicación combina alta calidez humana con agilidad digital. Observa cómo usan el `Futuro do Subjuntivo` y conectores como *'Pois é'* y *'Aliás'* de forma natural.",
                                     "transcript": [
@@ -860,7 +860,7 @@ def build_curriculum() -> dict:
                                         "type": "audio-comprehension",
                                         "title": "Comprensión de Podcast Corporativo",
                                         "audioTextPt": "Hoje meu carro deu problema, tive que deixar na oficina, mas assim que eu chegar no escritório vou te mandar o relatório.",
-                                        "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/b2/podcast-trecho-oficina.opus",
+                                        "mediaUrl": "https://ep-ptbrlms-prod-rhjee-f5hcfrg3dre8axb4.z01.azurefd.net/media/b2/podcast-trecho-oficina.opus",
                                         "question": "Escucha a Rafael. ¿Dónde tuvo que dejar su auto y cuándo enviará el reporte (relatório)?",
                                         "acceptedKeywords": ["na oficina", "chegar no escritório", "assim que chegar"],
                                         "multipleChoiceFallback": {
@@ -1072,7 +1072,7 @@ def build_curriculum() -> dict:
                                     "type": "Debate Económico & Escena de Serie Política Brasileña",
                                     "title": "Painel Executivo: Transição Energética, Governança e Inovação na América Latina",
                                     "artistOrSource": "Fórum Paulista de Economia & Sociedade (C1-C2)",
-                                    "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/c2/painel-economia-governanca.opus",
+                                    "mediaUrl": "https://ep-ptbrlms-prod-rhjee-f5hcfrg3dre8axb4.z01.azurefd.net/media/c2/painel-economia-governanca.opus",
                                     "coverImage": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
                                     "culturalContext": "En debates ejecutivos, académicos y periodísticos en Brasil, se valora la diplomacia asertiva: conceder parcialmente la razón al interlocutor (*'Não obstante...'*, *'Faz sentido, porém...'*) antes de presentar un contraargumento contundente respaldado por datos.",
                                     "transcript": [
@@ -1179,7 +1179,7 @@ def build_curriculum() -> dict:
                                         "type": "audio-comprehension",
                                         "title": "Comprensión de Debate Económico C2",
                                         "audioTextPt": "Não obstante os desafios fiscais a curto prazo, o fato de os investidores apostarem em matrizes limpas evita prejuízos futuros.",
-                                        "mediaUrl": "https://cdn-ptbr-lms.azurefd.net/media/c2/debate-trecho-investidores.opus",
+                                        "mediaUrl": "https://ep-ptbrlms-prod-rhjee-f5hcfrg3dre8axb4.z01.azurefd.net/media/c2/debate-trecho-investidores.opus",
                                         "question": "Escucha la intervención del Dr. Eduardo Ribeiro. ¿Qué estructura usa con el verbo 'apostar' y qué significa 'prejuízos futuros' en este contexto?",
                                         "acceptedKeywords": ["apostarem", "evita prejuízos", "pérdidas futuras"],
                                         "multipleChoiceFallback": {
