@@ -52,7 +52,10 @@ Construir una aplicación web educativa completa (LMS ligero tipo SPA) para ense
 
 ### Fase C: Creación del Repositorio en GitHub y Despliegue de Código
 1. Inicializar repositorio Git local con `.gitignore` seguro (excluyendo `.tmp/`, `.env`, `.terraform/`, `*.tfstate*`, credenciales OAuth).
-2. Crear el repositorio remoto en GitHub (`portugues-br-lms-azure`) mediante `gh repo create` y hacer push de toda la estructura, incluyendo workflows de GitHub Actions (`.github/workflows/deploy-azure-swa.yml` y `.github/workflows/terraform-infra.yml` configurados para usar el self-hosted runner o `ubuntu-latest`).
+2. Crear el repositorio remoto en GitHub (`portugues-br-lms-azure`) mediante `gh repo create` y hacer push de toda la estructura, incluyendo workflows de GitHub Actions:
+   - `.github/workflows/deploy-azure-swa.yml`
+   - `.github/workflows/terraform-infra.yml`
+   - `.github/workflows/finops-shift-left.yml`: Workflow de estimación de costos en Pull Requests con `cscloudsolutions/azure-finops-action@v1`, `api-url: https://finops.cscloudsolutions.com.ar`, `script-sha256: 788ffa3bcedc1b413b316d356cf818361a74dade8df86caddde1c9843533b684`, `threshold-usd: '300'` y carpeta de Terraform `infra/terraform`.
 
 ## 4. Salidas (Outputs)
 - Aplicación web completa en la raíz del proyecto (`index.html`, `css/styles.css`, `js/auth.js`, `js/progress.js`, `js/engine.js`, `js/app.js`, `data/curriculum.json`).

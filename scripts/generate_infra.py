@@ -694,6 +694,59 @@ jobs:
 """
 
 
+WORKFLOW_FINOPS_SHIFT_LEFT = """name: Costo de infraestructura (FinOps Shift-Left)
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: write # para comentar el impacto en el PR
+  id-token: write      # azure/login con OIDC (credencial federada)
+
+jobs:
+  costo:
+    name: FinOps Shift-Left
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_wrapper: false
+
+      # El plan necesita credenciales de Azure para leer los bloques data y el estado.
+      # Credencial federada de la app: subject repo:<organización>/<repo>:pull_request (con guion bajo).
+      - uses: azure/login@v3 # OIDC: credencial federada de una app registration
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Generar el plan
+        working-directory: infra/terraform
+        env:
+          ARM_USE_OIDC: "true"
+          ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+        run: |
+          terraform init -input=false
+          terraform plan -input=false -out=tfplan.bin
+          terraform show -json tfplan.bin > tfplan.json
+
+      - name: Estimar el costo (FinOps Shift-Left)
+        uses: cscloudsolutions/azure-finops-action@v1
+        with:
+          api-key: ${{ secrets.FINOPS_API_KEY }} # API Key con el permiso write:shift-left
+          tool: terraform
+          plan-json: infra/terraform/tfplan.json
+          api-url: https://finops.cscloudsolutions.com.ar
+          script-sha256: 788ffa3bcedc1b413b316d356cf818361a74dade8df86caddde1c9843533b684
+          threshold-usd: '300' # umbral de este workflow, en USD por mes
+"""
+
+
 GITIGNORE = """# Espacio temporal para datos intermedios
 .tmp/
 __pycache__/
@@ -862,6 +915,7 @@ def main():
     # GitHub Workflows
     (WF_DIR / "deploy-azure-swa.yml").write_text(WORKFLOW_DEPLOY_SWA.strip() + "\n", encoding="utf-8")
     (WF_DIR / "terraform-infra.yml").write_text(WORKFLOW_TERRAFORM.strip() + "\n", encoding="utf-8")
+    (WF_DIR / "finops-shift-left.yml").write_text(WORKFLOW_FINOPS_SHIFT_LEFT.strip() + "\n", encoding="utf-8")
 
     # Root configuration files
     (BASE_DIR / ".gitignore").write_text(GITIGNORE.strip() + "\n", encoding="utf-8")
@@ -887,7 +941,8 @@ def main():
                 ],
                 "workflows": [
                     ".github/workflows/deploy-azure-swa.yml",
-                    ".github/workflows/terraform-infra.yml"
+                    ".github/workflows/terraform-infra.yml",
+                    ".github/workflows/finops-shift-left.yml"
                 ]
             },
             f,
